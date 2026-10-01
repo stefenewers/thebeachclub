@@ -170,3 +170,24 @@ See §5 (filled per slot as work proceeds). **`reveal.beach` first; stop for rev
 2. The crowd skews about 35–55 rather than 25–40.
 3. In B, the bar and umbrellas sit on the lawn edge rather than the sand.
 4. The images are derived from third-party listing photos; rights are unresolved (§1).
+
+### Revision 2 — density correction (supersedes the picks above)
+
+**Feedback:** the geography was right, but the scene read as "villa brunch for 20–30". The target is a sold-out premium event of about 500 patrons at roughly 4 PM.
+
+**Method:** same three plates; `google/nano-banana-pro`, `resolution: 4K`, `aspect_ratio: match_input_image`; output 4096×2747 natively, no upscale needed. The prompt is `KEEP3 + DENSITY4[v] + CROWD4 + ENERGY4 + PROD4 + NEVER4 + PHOTO4` (in `jobs.mjs`).
+
+| View | Target | Pick | Why this take |
+|---|---|---|---|
+| A — elevated foliage reveal | 100–160 | `p3c-reveal-a-pro-2` | Exact plate framing (take 1 moved the camera and lost the right-hand trunk); about 120+ visible: waterline crowd, three umbrella clusters, back-of-beach cabanas, bar and DJ in the shade |
+| B — lawn and property | 60–100 | `p3c-reveal-b-pro-2` | Matches the plate; lawn lounges full, bar beyond, six umbrellas; more beachwear than take 1 |
+| C — beach level, villa | 70–120 | `p3c-reveal-c-pro-2` | Matches the plate (take 1 moved toward the villa); foreground couple carrying goblets, bar, cabanas, swimmers |
+
+**100% check:** clean faces and hands, canonical goblets, buckets and towels, a young beachwear crowd.
+
+**To fix at promotion:**
+- B-2 has a small logo-like mark on the bottom-right bucket; blur it.
+- Umbrella valances are slightly pointed. That's acceptable, but note it for the next slots.
+- B-2's sky is hazier than the plate's; grade it back toward the plate.
+
+The previous low-density picks are kept in `media-src/review/reveal-beach/v1-low-density/`.

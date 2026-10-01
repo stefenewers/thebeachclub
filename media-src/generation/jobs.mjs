@@ -217,6 +217,37 @@ const PASS03 = Object.keys(REVEAL_VIEWS).flatMap((v) => [
   },
 ]);
 
+/* ===================================================================
+ * Media Pass 03b — density correction. Same plates, same geography locks;
+ * a sold-out premium event at 3:30–4:30 PM instead of a villa brunch.
+ * ================================================================= */
+const CROWD4 =
+  "an affluent, stylish, attractive contemporary Jamaican event crowd, mostly 25 to 40: young professionals, founders, creatives, people in finance, law, tech, fashion and hospitality, diaspora home for the weekend and their friends, with the natural racial diversity of upper-middle-class and wealthy Jamaica. They clearly know each other and are relaxed and socially connected. Beachwear, not garden-party clothes: lots of premium swimwear and bikinis, crochet cover-ups, linen sets, slip and resort dresses; men in open linen shirts, knit polos, resort shirts and premium swim shorts, many shirtless or in swim shorts; sunglasses, gold jewellery; colours mixed (black, olive, terracotta, sand, sky blue, prints, some white). No suits, no blazers, no older brunch guests, no children, no wedding or family-reunion energy";
+const ENERGY4 =
+  "It is about 4 PM and the party has been going for two hours: music is established, people are drinking from glossy saffron-yellow acrylic champagne goblets, some are dancing casually, some swimming and splashing, some greeting friends with hugs, some lounging, some walking through the frame carrying drinks, some queuing at the bar. Candid movement, varied body orientation, people mid-conversation and mid-stride, layered foreground and background people with partial occlusion — not everyone standing still in circles, nobody posing";
+const PROD4 =
+  "Tasteful but clearly visible temporary event production (rented, not built): plain saffron-yellow canvas beach umbrellas with natural wood poles (no fringe, no stripes, no logos) in loose clusters; low teak loungers and daybeds with cream cushions and folded saffron towels; small natural-timber cabanas with cream fabric, occupied by groups; glossy saffron-yellow acrylic champagne ice buckets with dark green bottles; waiters and hosts in white short-sleeve linen shirts moving through with small round trays";
+const NEVER4 =
+  "Do not change the coastline, sand shape, rocks, trees, branches, lawn, buildings, headland or camera position. Keep breathing room and clear walking paths: crowded and alive but not wall-to-wall. No giant structures, no stage, no truss, no LED screens, no tents or marquees, no pergolas, no festival barriers, no text, no logos, no signage, no flags added";
+const PHOTO4 =
+  "Shot like an event photographer covering a real sold-out premium Jamaican beach party: candid, energetic, 35mm documentary, natural imperfections, hard bright afternoon Caribbean sun, fine film grain, protected highlights. Not property-listing, wedding or resort-campaign photography";
+
+const DENSITY4 = {
+  a: `View A, the hero, elevated through the foliage (keep the foreground leaves, vines and trunks exactly as they are). Show about 120 to 160 people across the beach: 25 to 30 in or at the waterline swimming, wading and splashing; 50 to 60 socialising across the open sand and in the tree shade on the left; 25 to 30 around the bar, the lounges and a low DJ area. Seven saffron umbrellas in three loose clusters, three occupied cabanas in the tree shade at the back of the beach on the left, one restrained champagne bar about four metres long with a saffron vertical-slat front and white top under the trees with a crowd at it, and a small natural-timber DJ console in the shade with people dancing loosely in front of it.`,
+  b: `View B, from the lawn looking onto the beach (keep the cottage, stone path, almond trees, flagpole and thatched umbrella exactly as they are). Show about 70 to 100 people: guests arriving across the lawn with drinks and greeting friends, a busy champagne bar about four metres long with a saffron vertical-slat front and white top on the sand just beyond the lawn edge with a host and two bartenders, a lounge area on the lawn under the almond trees with low teak sofas and cream cushions full of guests, six saffron umbrellas on the sand beyond with groups under them, and the beach and shallows behind busy with people swimming and walking.`,
+  c: `View C, from the sand looking back to the villa (keep the villa, its stone base, the thatched umbrella, the overhanging leaves at the top of the frame and the distant headland exactly as they are). Show about 80 to 120 people: a busy champagne bar about four metres long with a saffron vertical-slat front and white top beside the thatched umbrella with a crowd three-deep, two occupied cabanas in the shade in front of the villa, six saffron umbrellas over low teak loungers replacing the white plastic loungers, 25 people in and at the waterline, groups dancing casually on the sand, waiters crossing with trays, and people in the foreground walking past carrying goblets.`,
+};
+
+const PASS03C = Object.keys(DENSITY4).map((v) => ({
+  id: `p3c-reveal-${v}-pro`,
+  slot: "reveal.beach",
+  model: "google/nano-banana-pro",
+  variants: 2,
+  input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+  refs: [{ key: "image_input", list: true, file: REVEAL_VIEWS[v].plate, max: 1200 }],
+  prompt: `${KEEP3} Turn it into the same beach during BEACH CLUB, a sold-out private premium beach event for about 500 guests. ${DENSITY4[v]} The guests are ${CROWD4}. ${ENERGY4}. ${PROD4}. ${NEVER4}. ${PHOTO4}.`,
+}));
+
 export const jobs = [
   /* ------------------------------------------------------------ P0 wides */
   {
@@ -344,4 +375,6 @@ export const jobs = [
     input: { scale: 2, face_enhance: false },
     refs: [{ key: "image", file: `media-src/generated/${file}`, max: 1248 }],
   })),
+
+  ...PASS03C,
 ];
