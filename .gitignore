@@ -44,3 +44,8 @@ next-env.d.ts
 # raw generations (large); prompts/seeds kept as .json, promoted picks live in public/media/gen
 media-src/generated/**/*.jpg
 media-src/generated/**/*.png
+
+# third-party venue listing photos — private spatial reference only, never commit or publish
+media-src/venue-reference/
+
+media-src/review/

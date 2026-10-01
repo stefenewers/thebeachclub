@@ -148,6 +148,75 @@ const UPGRADES = [
   imagen("im-arrival-hero", "arrival.hero", "16:9", `Guest arrival at a private Jamaican beach estate at 1:40 PM, seen from the shaded pale-stone driveway: tall weathered teak double gates stand open in a rough dry-stacked white limestone wall overgrown with tropical plants, under a dense canopy of palms, almond trees and orange-red flowering royal poinciana; hard sun breaking through in shafts. In the upper-middle of the frame a host in a white linen shirt holding a slim black leather folio greets an elegant couple walking through the gate, a valet in white beside them. No cars in the frame. The bottom half of the frame is the shaded driveway, dark and calm. 35mm, eye level.`),
 ];
 
+/* ===================================================================
+ * Media Pass 03 — venue-locked corrections (docs/media-pass-03-correction.md)
+ * Real Frankfort plates are edited; the prompt adds only temporary
+ * production and people. Geography must come from the photograph.
+ * ================================================================= */
+const CROWD3 =
+  "an affluent contemporary Jamaican social crowd, mostly 25 to 40, drawn from Kingston and Jamaica's professional, creative and social circles, with the natural racial diversity found in upper-middle-class and wealthy Jamaica, plus diaspora friends and a smaller number of international guests; small groups who clearly know each other — old friends, couples, people greeting and running into each other — talking and laughing, not posing, mostly not facing the camera; varied personal styling with no dress code — linen shirts, knit polos, printed resort shirts, swim shorts, swimwear, crochet and slip dresses in a natural mix of olive, terracotta, black, sand, sky blue, soft prints and some white, never everyone in white; people stand in loose clusters facing each other, at different distances, some sitting on the sand, some walking, never lined up in a row and never all facing the camera; only the waiters wear white short-sleeve linen shirts";
+const PHOTO3 =
+  "High-end candid event photography, observational, 35mm documentary feel, unposed, natural imperfections, real hard 2:45 PM Caribbean sun, fine film grain, protected highlights, no HDR, no render perfection";
+const KEEP3 =
+  "This is a real photograph of a private beach on Jamaica's North Coast. Keep the location exactly as it is: the same coastline and curve of the beach, the same sand, sea, reef, rocks, trees, branches, lawn, buildings, headland, sky, light direction and camera position. Do not add, remove or move any trees, rocks, buildings, landforms or piers.";
+const NEVER3 =
+  "Leave plenty of empty sand and leave the trees untouched. No text, no logos, no signage, no flags added, no stage, no lighting rigs, no tents, no pergolas, no fringe or tassels on umbrellas, no rows of umbrellas, no permanent structures.";
+const UMBRELLA3 = "plain saffron-yellow canvas beach umbrellas with natural wood poles (no fringe, no stripes)";
+const BAR3 =
+  "one small temporary champagne bar about three metres long with a front of vertical saffron-yellow painted timber slats and a white top, two bartenders in white linen, glossy saffron-yellow acrylic ice buckets with dark green bottles";
+const CABANA3 = "small temporary cabanas made of a light natural-timber frame with cream fabric, low daybeds inside";
+const J3 = "media-src/venue-reference/jamaicaescapes/frankfort_on_the_beach_prospect_plantation_ocho_rios_jamaica";
+
+const REVEAL_VIEWS = {
+  a: {
+    plate: `${J3}_51.jpg`,
+    scene: `View A, elevated through the foliage. Keep the foreground leaves, vines and tree trunks exactly as they are. Down on the beach add: five ${UMBRELLA3} in two loose groups on the open sand, low natural-wood loungers with cream cushions beneath them, two ${CABANA3} in the tree shade at the back of the beach on the left, and about 80 to 110 guests spread naturally along the beach in small groups, with around 15 people swimming and standing in the turquoise shallows.`,
+  },
+  b: {
+    plate: `${J3}_15.jpg`,
+    scene: `View B, eye level, arriving across the lawn onto the beach. Keep the cottage, stone path, almond trees, flagpole and thatched umbrella exactly as they are. Add guests arriving across the lawn toward the beach and a host in white linen greeting a couple; on the white sand beyond the lawn, just past the almond trees (not on the grass), ${BAR3}; four ${UMBRELLA3} on the open sand near the water; about 40 to 60 guests in total across the lawn and beach.`,
+  },
+  c: {
+    plate: `${J3}_12.jpg`,
+    scene: `View C, from the sand near the water looking back along the beach to the villa. Keep the villa, its stone base, the thatched umbrella, the overhanging leaves at the top of the frame and the distant headland exactly as they are. Replace the white plastic sun loungers with low natural-wood loungers with cream cushions under four ${UMBRELLA3}; beside the thatched umbrella add ${BAR3}; in the shade in front of the villa add two ${CABANA3}; add about 50 to 80 guests in groups on the sand, some at the waterline holding glossy saffron-yellow acrylic champagne goblets.`,
+  },
+};
+
+const revealPrompt = (v) =>
+  `${KEEP3} Turn it into the same beach during BEACH CLUB, a private Saturday beach party at about 2:45 PM. ${REVEAL_VIEWS[v].scene} The guests are ${CROWD3}. ${NEVER3} ${PHOTO3}.`;
+
+const PASS03_B = Object.keys(REVEAL_VIEWS).map((v) => ({
+  id: `p3-reveal-${v}-banana-r2`,
+  slot: "reveal.beach",
+  model: "google/nano-banana",
+  variants: 2,
+  input: { aspect_ratio: "match_input_image", output_format: "png" },
+  refs: [{ key: "image_input", list: true, file: REVEAL_VIEWS[v].plate, max: 1200 }],
+  prompt: revealPrompt(v),
+}));
+
+const PASS03 = Object.keys(REVEAL_VIEWS).flatMap((v) => [
+  {
+    id: `p3-reveal-${v}-kontext`,
+    slot: "reveal.beach",
+    model: "black-forest-labs/flux-kontext-max",
+    variants: 1,
+    seed: 3301,
+    input: { aspect_ratio: "match_input_image", output_format: "png", safety_tolerance: 2 },
+    refs: [{ key: "input_image", file: REVEAL_VIEWS[v].plate, max: 1200 }],
+    prompt: revealPrompt(v),
+  },
+  {
+    id: `p3-reveal-${v}-banana`,
+    slot: "reveal.beach",
+    model: "google/nano-banana",
+    variants: 1,
+    input: { aspect_ratio: "match_input_image", output_format: "png" },
+    refs: [{ key: "image_input", list: true, file: REVEAL_VIEWS[v].plate, max: 1200 }],
+    prompt: revealPrompt(v),
+  },
+]);
+
 export const jobs = [
   /* ------------------------------------------------------------ P0 wides */
   {
@@ -261,4 +330,18 @@ export const jobs = [
   ...BAKEOFF,
 
   ...UPGRADES,
+
+  ...PASS03,
+  ...PASS03_B,
+  ...[
+    ["a", "p3-reveal-a-banana-r2/p3-reveal-a-banana-r2-1.png"],
+    ["b", "p3-reveal-b-banana-r2/p3-reveal-b-banana-r2-2.png"],
+    ["c", "p3-reveal-c-banana-r2/p3-reveal-c-banana-r2-2.png"],
+  ].map(([v, file]) => ({
+    id: `p3-reveal-${v}-up`,
+    slot: "reveal.beach",
+    model: "nightmareai/real-esrgan",
+    input: { scale: 2, face_enhance: false },
+    refs: [{ key: "image", file: `media-src/generated/${file}`, max: 1248 }],
+  })),
 ];
