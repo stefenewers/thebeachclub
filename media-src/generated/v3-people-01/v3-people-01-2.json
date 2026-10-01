@@ -1,0 +1,13 @@
+{
+  "job": "v3-people-01",
+  "slot": "people.01",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 5:15 PM, three friends walk along the wet sand at the waterline of a private Jamaican beach, seen from behind and the side, one turning back mid-laugh: a Black Jamaican woman in a white crochet cover-up with gold hoops, a mixed-race man in a cream linen shirt with sleeves rolled and navy tailored swim shorts, and a white woman in a sand-coloured linen set; sandals in hand. Warm low sun ahead and to the right, rim light, sparkling shallows, a soft cluster of saffron-yellow umbrellas behind. 50mm. The lower-left of the frame is calm wet sand. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4002,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

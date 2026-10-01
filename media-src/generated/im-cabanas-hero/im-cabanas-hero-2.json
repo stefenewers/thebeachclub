@@ -1,0 +1,12 @@
+{
+  "job": "im-cabanas-hero",
+  "slot": "cabanas.hero",
+  "model": "google/imagen-4-ultra",
+  "input": {
+    "prompt": "At 4:30 PM, a calm wide view of five separate, free-standing beach cabanas spaced a few metres apart along the tree line at the back of a white-sand Jamaican cove: each cabana is a 3 by 3 metre natural oiled-teak frame with a flat white linen canopy and white linen drapes tied back with rope, a low daybed with cream cushions and two saffron cushions. Guests relax inside, a host in white carries an ice bucket, sea grape and almond trees overhead, the turquoise sea in the right third of the frame. Standing eye level about 18 metres away, 35mm, deep focus. The lower-left of the frame is calm sand in soft shade. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "aspect_ratio": "16:9",
+    "image_size": "2K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high"
+  }
+}

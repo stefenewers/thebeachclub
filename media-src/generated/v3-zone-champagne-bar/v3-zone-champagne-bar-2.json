@@ -1,0 +1,23 @@
+{
+  "job": "v3-zone-champagne-bar",
+  "slot": "zone.champagne-bar",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 3:15 PM, the champagne bar at the back of a private Jamaican beach: a 6-metre bar with a saffron-yellow slatted timber front and white top under a teak pergola with white canvas and woven rattan pendant lights, three bartenders in white linen shirts, saffron-yellow acrylic ice buckets with dark green bottles, a row of opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem; guests gathered easily in front talking and laughing. a contemporary affluent Caribbean crowd, visibly mixed: about half Black Jamaican and Afro-Caribbean guests, the rest mixed-race, white, Latin, South Asian and East Asian international guests, mostly late 20s to early 40s, men and women in roughly equal numbers, relaxed old friends and couples, stylish but not posed, no one looking at the camera. men in open-collar linen shirts, knit polos, resort shirts and tailored swim shorts; women in premium swimwear, crochet cover-ups, linen sets and resort dresses; colours white, cream, sand, black, olive and muted terracotta; gold jewellery and sunglasses; almost nobody wears yellow. Eye level, 35mm, three-quarter view. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4990,
+    "aspect_ratio": "3:2",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.2,
+    "image_prompt": {
+      "file": "media-src/boards/board-2.png",
+      "crop": [
+        5,
+        340,
+        370,
+        247
+      ]
+    }
+  }
+}

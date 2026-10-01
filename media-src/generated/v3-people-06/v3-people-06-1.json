@@ -1,0 +1,13 @@
+{
+  "job": "v3-people-06",
+  "slot": "people.06",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Quiet portrait at 4 PM in dappled shade under sea grape trees: a woman in her thirties, mixed-race, in a cream linen shirt and gold necklace, sunglasses pushed up into her hair, seated on a low teak sofa, direct calm gaze toward the camera, half her face in soft shade; tropical leaves and a sliver of sea out of focus. 85mm. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4006,
+    "aspect_ratio": "3:4",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

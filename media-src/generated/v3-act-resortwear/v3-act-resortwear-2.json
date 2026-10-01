@@ -1,0 +1,13 @@
+{
+  "job": "v3-act-resortwear",
+  "slot": "activation.resortwear",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 5:45 PM, an editorial portrait on the waterline of a private Jamaican beach: a stylish guest in a capsule resortwear look — cream crochet top and wide linen trousers in muted terracotta, gold jewellery, woven bag — walking barefoot through the shallows, warm low sun, sparkling water, soft green headland behind. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4674,
+    "aspect_ratio": "4:3",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

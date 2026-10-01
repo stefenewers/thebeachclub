@@ -1,0 +1,13 @@
+{
+  "job": "v3-people-02",
+  "slot": "people.02",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Portrait at 3:30 PM: a woman in her early thirties, Afro-Caribbean, in a flowing white resort dress and gold jewellery, sitting on a teak lounger under a saffron-yellow beach umbrella, looking off-frame toward the sea, relaxed, a yellow acrylic goblet in hand; soft warm umbrella-filtered light on her face, turquoise sea and sand out of focus. 85mm. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4002,
+    "aspect_ratio": "4:5",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

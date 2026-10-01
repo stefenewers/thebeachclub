@@ -1,0 +1,20 @@
+{
+  "job": "bo-sunset-champagne-seedream",
+  "slot": "sunset.champagne",
+  "model": "bytedance/seedream-4",
+  "input": {
+    "prompt": "At 7:45 PM, close-up of two opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem raised and touching, held by two hands of different skin tones with gold jewellery, champagne catching warm light; behind, out of focus, glowing paper lanterns in sea grape trees and the last orange glow of sunset over the sea. The centre of the frame is calm. The champagne goblets and ice bucket look exactly like the ones in the reference images: opaque glossy deep-saffron acrylic. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "size": "4K",
+    "aspect_ratio": "16:9",
+    "max_images": 1,
+    "enhance_prompt": false,
+    "image_input": [
+      {
+        "file": "media-src/generated/pour-goblet-b/pour-goblet-b-2.jpg"
+      },
+      {
+        "file": "media-src/generated/champagne-still-edit-2/champagne-still-edit-2-1.png"
+      }
+    ]
+  }
+}

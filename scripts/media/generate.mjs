@@ -50,7 +50,8 @@ async function predict(model, input, attempt = 0) {
 async function dataUri({ file, crop, max = 1440 }) {
   let img = sharp(path.join(ROOT, file));
   if (crop) img = img.extract({ left: crop[0], top: crop[1], width: crop[2], height: crop[3] });
-  const buf = await img.resize(max, max, { fit: "inside", withoutEnlargement: true }).jpeg({ quality: 90 }).toBuffer();
+  // Fit inside `max`, enlarging small board tiles (models reject references under 256px).
+  const buf = await img.resize(max, max, { fit: "inside" }).jpeg({ quality: 90 }).toBuffer();
   return `data:image/jpeg;base64,${buf.toString("base64")}`;
 }
 
@@ -62,15 +63,24 @@ async function run(job, n) {
   if (await exists(`${base}.${ext}`)) return console.log(`skip  ${job.id}-${n + 1}`);
   await mkdir(dir, { recursive: true });
   // Utility models (upscalers) take no prompt or seed.
-  const input = job.prompt ? { prompt: job.prompt, seed, ...job.input } : { ...job.input };
+  // Only FLUX models take a seed; utility models (upscalers) take no prompt.
+  const seeded = job.model.startsWith("black-forest-labs/") ? { seed } : {};
+  const input = job.prompt ? { prompt: job.prompt, ...seeded, ...job.input } : { ...job.input };
   // Reference images (board tiles or earlier generations), sent inline as data URIs.
-  for (const ref of job.refs ?? []) input[ref.key] = await dataUri(ref);
+  for (const ref of job.refs ?? []) {
+    const uri = await dataUri(ref);
+    // List-type inputs (e.g. Seedream's image_input) collect several references.
+    input[ref.key] = ref.list ? [...(input[ref.key] ?? []), uri] : uri;
+  }
   const t = Date.now();
   const url = await predict(job.model, input);
   const buf = Buffer.from(await (await fetch(url)).arrayBuffer());
   await writeFile(`${base}.${ext}`, buf);
   const record = { ...input };
-  for (const ref of job.refs ?? []) record[ref.key] = { file: ref.file, crop: ref.crop };
+  for (const ref of job.refs ?? []) {
+    const r = { file: ref.file, crop: ref.crop };
+    record[ref.key] = ref.list ? [...(Array.isArray(record[ref.key]) && typeof record[ref.key][0] === "object" ? record[ref.key] : []), r] : r;
+  }
   await writeFile(`${base}.json`, JSON.stringify({ job: job.id, slot: job.slot, model: job.model, input: record }, null, 2));
   console.log(`done  ${job.id}-${n + 1}  ${(buf.length / 1024).toFixed(0)} KB  ${((Date.now() - t) / 1000).toFixed(0)}s`);
 }

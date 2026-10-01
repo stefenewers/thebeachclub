@@ -1,0 +1,23 @@
+{
+  "job": "v3-sunset-ocean",
+  "slot": "sunset.ocean",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 6:48 PM, the sun touching a calm Caribbean sea seen from a private Jamaican cove, a golden path on the water, a single swimmer in silhouette, a dark silhouette of sea grape branches framing the right side, warm haze, quiet. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4451,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.15,
+    "image_prompt": {
+      "file": "media-src/boards/board-1.png",
+      "crop": [
+        1098,
+        660,
+        355,
+        200
+      ]
+    }
+  }
+}

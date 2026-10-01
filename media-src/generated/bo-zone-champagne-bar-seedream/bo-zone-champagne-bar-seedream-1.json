@@ -1,0 +1,20 @@
+{
+  "job": "bo-zone-champagne-bar-seedream",
+  "slot": "zone.champagne-bar",
+  "model": "bytedance/seedream-4",
+  "input": {
+    "prompt": "At 3:15 PM, the champagne bar at the back of a private Jamaican beach party: a 6-metre bar with a saffron-yellow vertical-slat timber front and a white top under a natural teak pergola with white canvas and woven rattan pendant lights. Three bartenders in white linen shirts pour champagne into opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem; a opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic champagne ice bucket filled with crushed ice with dark green champagne bottles with plain gold foil and blank cream labels on the bar. In front, guests stand in relaxed conversation facing each other and the bar, seen from the side, laughing, holding goblets. a contemporary affluent Caribbean crowd, visibly mixed: about half Black Jamaican and Afro-Caribbean guests, the rest mixed-race, white, Latin, South Asian and East Asian international guests, mostly late 20s to early 40s, men and women in roughly equal numbers, relaxed old friends and couples, stylish but not posed, no one looking at the camera. men in open-collar linen shirts, knit polos, resort shirts and tailored swim shorts; women in premium swimwear, crochet cover-ups, linen sets and resort dresses; colours white, cream, sand, black, olive and muted terracotta; gold jewellery and sunglasses; almost nobody wears yellow. Eye level, 35mm, three-quarter view of the bar. The champagne goblets and ice bucket look exactly like the ones in the reference images: opaque glossy deep-saffron acrylic. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "size": "4K",
+    "aspect_ratio": "3:2",
+    "max_images": 1,
+    "enhance_prompt": false,
+    "image_input": [
+      {
+        "file": "media-src/generated/pour-goblet-b/pour-goblet-b-2.jpg"
+      },
+      {
+        "file": "media-src/generated/champagne-still-edit-2/champagne-still-edit-2-1.png"
+      }
+    ]
+  }
+}

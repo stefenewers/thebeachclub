@@ -1,0 +1,12 @@
+{
+  "job": "im-arrival-hero",
+  "slot": "arrival.hero",
+  "model": "google/imagen-4-ultra",
+  "input": {
+    "prompt": "Guest arrival at a private Jamaican beach estate at 1:40 PM, seen from the shaded pale-stone driveway: tall weathered teak double gates stand open in a rough dry-stacked white limestone wall overgrown with tropical plants, under a dense canopy of palms, almond trees and orange-red flowering royal poinciana; hard sun breaking through in shafts. In the upper-middle of the frame a host in a white linen shirt holding a slim black leather folio greets an elegant couple walking through the gate, a valet in white beside them. No cars in the frame. The bottom half of the frame is the shaded driveway, dark and calm. 35mm, eye level. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "aspect_ratio": "16:9",
+    "image_size": "2K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high"
+  }
+}

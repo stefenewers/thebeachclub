@@ -1,0 +1,13 @@
+{
+  "job": "v3-sunset-champagne",
+  "slot": "sunset.champagne",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 7:45 PM, close-up of two opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem raised and touching against warm out-of-focus lantern light and the last glow of sunset, hands with gold jewellery, champagne catching the light. The centre of the frame is calm. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4865,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

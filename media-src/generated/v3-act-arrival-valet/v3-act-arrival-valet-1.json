@@ -1,0 +1,23 @@
+{
+  "job": "v3-act-arrival-valet",
+  "slot": "activation.arrival-valet",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 1:35 PM at a private Jamaican estate gate: a valet in a white shirt and black trousers holds open the rear door of a dark SUV with completely plain bodywork and no badges or lettering, as an elegant woman in a cream linen dress steps out; a host in white with a slim black folio smiles nearby; weathered teak gates in a dry-stacked limestone wall and a dense tropical canopy, dappled hard sun. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4909,
+    "aspect_ratio": "4:3",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.18,
+    "image_prompt": {
+      "file": "media-src/boards/board-2.png",
+      "crop": [
+        1135,
+        20,
+        401,
+        301
+      ]
+    }
+  }
+}

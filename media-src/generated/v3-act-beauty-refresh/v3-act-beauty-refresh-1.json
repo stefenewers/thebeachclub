@@ -1,0 +1,13 @@
+{
+  "job": "v3-act-beauty-refresh",
+  "slot": "activation.beauty-refresh",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 4 PM, a shaded refresh station under sea grape trees: a low natural-teak console with rolled white cold towels, a few plain unlabelled glass fragrance and mist bottles, a round mirror, a ceramic bowl of ice; a woman's hand taking a cold towel; dappled light, turquoise sea glimpsed between trunks. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 5017,
+    "aspect_ratio": "4:3",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

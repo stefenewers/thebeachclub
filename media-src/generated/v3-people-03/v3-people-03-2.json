@@ -1,0 +1,13 @@
+{
+  "job": "v3-people-03",
+  "slot": "people.03",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 4:30 PM, two men in their thirties in conversation at a beach champagne bar: one South Asian in an open-collar white linen shirt, one Black Jamaican in a sand knit polo, both holding opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem, laughing easily; behind them the saffron-yellow slatted bar front and a bartender in white, soft focus. 50mm, editorial. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4004,
+    "aspect_ratio": "3:4",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

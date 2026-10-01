@@ -1,0 +1,13 @@
+{
+  "job": "v3-champagne-umbrella",
+  "slot": "champagne.umbrella",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Looking up through the underside of a round saffron-yellow canvas beach umbrella at 3 PM, ribs and natural teak pole visible, the sun glowing through the canvas, turquoise sky and palm fronds at the edges. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 5043,
+    "aspect_ratio": "3:2",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

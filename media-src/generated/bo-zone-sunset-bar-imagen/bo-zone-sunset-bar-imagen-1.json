@@ -1,0 +1,12 @@
+{
+  "job": "bo-zone-sunset-bar-imagen",
+  "slot": "zone.sunset-bar",
+  "model": "google/imagen-4-ultra",
+  "input": {
+    "prompt": "At 6:15 PM, a long dark-teak beach bar with a white top at the west end of a private Jamaican cove, seen from the side as the low golden sun sits over the sea; bartenders in white linen pour over large clear ice into clear rocks glasses with lime; guests stand along the bar in profile, talking and toasting, warm backlight, long shadows, one saffron-yellow umbrella. a contemporary affluent Caribbean crowd, visibly mixed: about half Black Jamaican and Afro-Caribbean guests, the rest mixed-race, white, Latin, South Asian and East Asian international guests, mostly late 20s to early 40s, men and women in roughly equal numbers, relaxed old friends and couples, stylish but not posed, no one looking at the camera. men in open-collar linen shirts, knit polos, resort shirts and tailored swim shorts; women in premium swimwear, crochet cover-ups, linen sets and resort dresses; colours white, cream, sand, black, olive and muted terracotta; gold jewellery and sunglasses; almost nobody wears yellow. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "job": "v3-cabanas-hero",
+  "slot": "cabanas.hero",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 4:30 PM, a calm architectural wide of five natural oiled-teak cabanas with white linen drapes tied back with rope, cream cushions with a few saffron-yellow accents integrated into the tree line along the back of a white-sand Jamaican cove, linen drapes moving, guests relaxing inside, a host in white, the turquoise sea in the right third of the frame. Standing eye level about 18 metres away, nearly parallel to the row, 35mm, deep focus. The lower-left of the frame is calm sand and shade. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4403,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.2,
+    "image_prompt": {
+      "file": "media-src/boards/board-5.png",
+      "crop": [
+        162,
+        557,
+        357,
+        201
+      ]
+    }
+  }
+}

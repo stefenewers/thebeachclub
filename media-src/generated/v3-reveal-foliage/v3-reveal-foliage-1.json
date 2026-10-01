@@ -1,0 +1,23 @@
+{
+  "job": "v3-reveal-foliage",
+  "slot": "reveal.foliage",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Looking out from inside dense tropical foliage on a Jamaican North Coast hillside: big sea grape and Indian almond leaves and branches, sharp and backlit, filling the left, right and top of the frame like a natural window; through the opening in the centre, a glimpse of turquoise sea, a rocky green headland and a pale beach far below. Hard early-afternoon sun, translucent green leaves glowing. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4625,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.15,
+    "image_prompt": {
+      "file": "media-src/boards/board-6.png",
+      "crop": [
+        1181,
+        62,
+        355,
+        280
+      ]
+    }
+  }
+}

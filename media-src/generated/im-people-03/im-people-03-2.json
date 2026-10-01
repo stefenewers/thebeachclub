@@ -1,0 +1,12 @@
+{
+  "job": "im-people-03",
+  "slot": "people.03",
+  "model": "google/imagen-4-ultra",
+  "input": {
+    "prompt": "At 4:30 PM, two men in their thirties laughing in conversation at a beach champagne bar, seen from the side and front: one South Asian in an open-collar white linen shirt, one Black Jamaican in a sand-coloured knit polo, each holding opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem — opaque, not glass, not flutes; behind them a saffron-yellow vertical-slat bar front with a white top and a bartender in white linen, softly out of focus. 50mm, editorial. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "aspect_ratio": "3:4",
+    "image_size": "2K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high"
+  }
+}

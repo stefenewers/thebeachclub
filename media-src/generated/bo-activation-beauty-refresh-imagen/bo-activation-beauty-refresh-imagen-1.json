@@ -1,0 +1,12 @@
+{
+  "job": "bo-activation-beauty-refresh-imagen",
+  "slot": "activation.beauty-refresh",
+  "model": "google/imagen-4-ultra",
+  "input": {
+    "prompt": "At 4 PM, a shaded refresh station under sea grape trees at a private beach party: a low natural-teak console with rolled white cold towels, three plain unlabelled frosted-glass mist bottles with no labels at all, a round mirror on a stand, a ceramic bowl of ice; a guest smiling as she takes a cold towel from an attendant in white linen; dappled light, turquoise sea between the trunks. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "aspect_ratio": "4:3",
+    "image_size": "2K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high"
+  }
+}

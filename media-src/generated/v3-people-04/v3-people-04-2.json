@@ -1,0 +1,13 @@
+{
+  "job": "v3-people-04",
+  "slot": "people.04",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Overhead view at 5 PM of a toast above a weathered teak table on the sand: four hands of different skin tones with gold rings and bracelets raising opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem that meet in the centre, a saffron-yellow acrylic ice bucket with bottles and a folded linen napkin on the table, long warm shadows. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4005,
+    "aspect_ratio": "4:5",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

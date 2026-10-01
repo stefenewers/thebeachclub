@@ -1,0 +1,23 @@
+{
+  "job": "v3-act-shoreline-lounge",
+  "slot": "activation.shoreline-lounge",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 4 PM, a high oblique view of one shoreline lounge on a private Jamaican beach: a cluster of four round beach umbrellas with solid saffron-yellow matte canvas, short straight valance, no stripes, no fringe, natural teak poles over low teak sofas with cream and saffron cushions on the sand right at the waterline, guests lounging, turquoise water lapping a few metres away. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 5236,
+    "aspect_ratio": "4:3",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.2,
+    "image_prompt": {
+      "file": "media-src/boards/board-2.png",
+      "crop": [
+        796,
+        591,
+        340,
+        255
+      ]
+    }
+  }
+}

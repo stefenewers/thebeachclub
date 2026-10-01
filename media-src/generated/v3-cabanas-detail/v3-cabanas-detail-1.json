@@ -1,0 +1,13 @@
+{
+  "job": "v3-cabanas-detail",
+  "slot": "cabanas.detail",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Detail at 4 PM in a beach cabana: a saffron-yellow acrylic ice bucket beaded with condensation holding two dark green bottles with plain gold foil, on a weathered teak table with a folded white linen napkin and two opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem, a host's hand in a white linen cuff adjusting a bottle; soft shade, sea glimpsed behind. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 4599,
+    "aspect_ratio": "3:4",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

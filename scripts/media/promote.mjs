@@ -21,12 +21,33 @@ const selects = JSON.parse(await readFile(path.join(ROOT, "media-src/generation/
 const FULL = new Set(["arrival.hero", "reveal.beach", "people.01", "people.05", "cabanas.hero", "sunset.crowd", "sunset.ocean", "sunset.evening", "sunset.champagne"]);
 
 const out = {};
-for (const [slot, { file, focus = "50% 50%" }] of Object.entries(selects)) {
+/**
+ * Feathered blur over fractional rectangles [x, y, w, h] (0–1) — softens small
+ * flaws found in review (stray lettering, badges) without regenerating.
+ */
+async function soften(file, patches) {
+  const img = sharp(path.join(GEN, file));
+  const { width: w, height: h } = await img.metadata();
+  const rects = patches
+    .map(([x, y, pw, ph]) => `<rect x="${x * w}" y="${y * h}" width="${pw * w}" height="${ph * h}" rx="${Math.min(pw * w, ph * h) / 3}" fill="#fff" filter="url(#f)"/>`)
+    .join("");
+  const mask = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><defs><filter id="f"><feGaussianBlur stdDeviation="${w / 300}"/></filter></defs>${rects}</svg>`);
+  const blurred = await sharp(path.join(GEN, file)).blur(w / 160).composite([{ input: mask, blend: "dest-in" }]).png().toBuffer();
+  return sharp(path.join(GEN, file)).composite([{ input: blurred }]).png().toBuffer();
+}
+
+for (const [slot, { file, focus = "50% 50%", patches = [], crop }] of Object.entries(selects)) {
   const cap = FULL.has(slot) ? 3200 : 2000;
   const rel = `gen/${slot.replace(/\./g, "-")}.webp`;
   const dest = path.join(ROOT, "public/media", rel);
   await mkdir(path.dirname(dest), { recursive: true });
-  const info = await sharp(path.join(GEN, file))
+  let img = sharp(patches.length ? await soften(file, patches) : path.join(GEN, file));
+  if (crop) {
+    // Fractional [x, y, w, h] — trims distracting edges found in review.
+    const { width: w, height: h } = await sharp(path.join(GEN, file)).metadata();
+    img = sharp(await img.extract({ left: Math.round(crop[0] * w), top: Math.round(crop[1] * h), width: Math.round(crop[2] * w), height: Math.round(crop[3] * h) }).toBuffer());
+  }
+  const info = await img
     .resize(cap, cap, { fit: "inside", withoutEnlargement: true })
     .webp({ quality: 80, effort: 5 })
     .toFile(dest);

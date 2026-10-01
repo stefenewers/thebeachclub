@@ -1,0 +1,13 @@
+{
+  "job": "v3-act-content-installation",
+  "slot": "activation.content-installation",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "At 5:30 PM, a single minimal architectural frame made of natural oiled teak beams, about three metres tall, standing on the white sand of a private beach, the turquoise sea and horizon visible through it; two guests photographing each other inside the frame, warm golden light, long shadows. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 5678,
+    "aspect_ratio": "4:3",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

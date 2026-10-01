@@ -1,4 +1,13 @@
 {
+  "arrival.hero": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/arrival-hero.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "60% 40%",
+    "origin": "generated im-arrival-hero/im-arrival-hero-2.jpg"
+  },
   "reveal.beach": {
     "provider": "local",
     "kind": "image",
@@ -8,14 +17,14 @@
     "focus": "62% 60%",
     "origin": "generated reveal-beach-b/reveal-beach-b-2.jpg"
   },
-  "champagne.still": {
+  "reveal.foliage": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/champagne-still.webp",
-    "width": 1710,
-    "height": 2000,
-    "focus": "60% 55%",
-    "origin": "generated champagne-still-up/champagne-still-up-1.jpg"
+    "desktop": "/media/gen/reveal-foliage.webp",
+    "width": 2000,
+    "height": 1116,
+    "focus": "50% 50%",
+    "origin": "generated v3-reveal-foliage/v3-reveal-foliage-1.jpg"
   },
   "pour.bottle": {
     "provider": "local",
@@ -88,5 +97,266 @@
     "height": 2000,
     "focus": "60% 40%",
     "origin": "generated pour-sunlight/pour-sunlight-1.jpg"
+  },
+  "zone.water": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-water.webp",
+    "width": 1747,
+    "height": 1165,
+    "focus": "40% 55%",
+    "origin": "generated v3-zone-water/v3-zone-water-1.jpg"
+  },
+  "zone.shore": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-shore.webp",
+    "width": 2000,
+    "height": 1333,
+    "focus": "55% 55%",
+    "origin": "generated v3-zone-shore/v3-zone-shore-2.jpg"
+  },
+  "zone.cabanas": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-cabanas.webp",
+    "width": 2000,
+    "height": 1333,
+    "focus": "45% 55%",
+    "origin": "generated v3-zone-cabanas/v3-zone-cabanas-1.jpg"
+  },
+  "zone.dj-terrace": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-dj-terrace.webp",
+    "width": 2000,
+    "height": 1333,
+    "focus": "50% 50%",
+    "origin": "generated v3-zone-dj-terrace/v3-zone-dj-terrace-1.jpg"
+  },
+  "zone.garden-lounge": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-garden-lounge.webp",
+    "width": 2000,
+    "height": 1333,
+    "focus": "50% 60%",
+    "origin": "generated v3-zone-garden-lounge/v3-zone-garden-lounge-1.jpg"
+  },
+  "people.01": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-01.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "60% 45%",
+    "origin": "generated v3-people-01/v3-people-01-2.jpg"
+  },
+  "people.02": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-02.webp",
+    "width": 1611,
+    "height": 2000,
+    "focus": "50% 35%",
+    "origin": "generated v3-people-02/v3-people-02-2.jpg"
+  },
+  "people.03": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-03.webp",
+    "width": 1493,
+    "height": 2000,
+    "focus": "50% 35%",
+    "origin": "generated im-people-03/im-people-03-2.jpg"
+  },
+  "people.04": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-04.webp",
+    "width": 1611,
+    "height": 2000,
+    "focus": "50% 45%",
+    "origin": "generated v3-people-04/v3-people-04-1.jpg"
+  },
+  "people.05": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-05.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "50% 60%",
+    "origin": "generated v3-people-05/v3-people-05-2.jpg"
+  },
+  "people.06": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/people-06.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 30%",
+    "origin": "generated v3-people-06/v3-people-06-2.jpg"
+  },
+  "champagne.still": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/champagne-still.webp",
+    "width": 1710,
+    "height": 2000,
+    "focus": "60% 55%",
+    "origin": "generated champagne-still-up/champagne-still-up-1.jpg"
+  },
+  "champagne.umbrella": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/champagne-umbrella.webp",
+    "width": 2000,
+    "height": 1333,
+    "focus": "50% 50%",
+    "origin": "generated v3-champagne-umbrella/v3-champagne-umbrella-1.jpg"
+  },
+  "activation.shoreline-lounge": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-shoreline-lounge.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "55% 50%",
+    "origin": "generated im-act-shoreline-lounge/im-act-shoreline-lounge-1.jpg"
+  },
+  "activation.sunset-tequila": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-sunset-tequila.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "50% 45%",
+    "origin": "generated im-act-sunset-tequila/im-act-sunset-tequila-1.jpg"
+  },
+  "activation.arrival-valet": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-arrival-valet.webp",
+    "width": 2000,
+    "height": 1514,
+    "focus": "50% 50%",
+    "origin": "generated v3-act-arrival-valet/v3-act-arrival-valet-1.jpg"
+  },
+  "activation.cabana": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-cabana.webp",
+    "width": 2000,
+    "height": 1514,
+    "focus": "50% 55%",
+    "origin": "generated v3-act-cabana/v3-act-cabana-1.jpg"
+  },
+  "activation.beauty-refresh": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-beauty-refresh.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "45% 55%",
+    "origin": "generated bo-activation-beauty-refresh-imagen/bo-activation-beauty-refresh-imagen-1.jpg"
+  },
+  "activation.resortwear": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-resortwear.webp",
+    "width": 2000,
+    "height": 1514,
+    "focus": "50% 40%",
+    "origin": "generated v3-act-resortwear/v3-act-resortwear-2.jpg"
+  },
+  "activation.content-installation": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-content-installation.webp",
+    "width": 2000,
+    "height": 1514,
+    "focus": "50% 55%",
+    "origin": "generated v3-act-content-installation/v3-act-content-installation-1.jpg"
+  },
+  "cabanas.hero": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/cabanas-hero.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "40% 55%",
+    "origin": "generated im-cabanas-hero/im-cabanas-hero-1.jpg"
+  },
+  "cabanas.detail": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/cabanas-detail.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 45%",
+    "origin": "generated v3-cabanas-detail/v3-cabanas-detail-1.jpg"
+  },
+  "sunset.crowd": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/sunset-crowd.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "50% 45%",
+    "origin": "generated v3-sunset-crowd/v3-sunset-crowd-1.jpg"
+  },
+  "sunset.ocean": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/sunset-ocean.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "50% 45%",
+    "origin": "generated v3-sunset-ocean/v3-sunset-ocean-1.jpg"
+  },
+  "sunset.evening": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/sunset-evening.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "50% 55%",
+    "origin": "generated v3-sunset-evening/v3-sunset-evening-1.jpg"
+  },
+  "zone.champagne-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-champagne-bar.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "50% 50%",
+    "origin": "generated bo-zone-champagne-bar-imagen/bo-zone-champagne-bar-imagen-1.jpg"
+  },
+  "zone.sunset-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/zone-sunset-bar.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "50% 45%",
+    "origin": "generated bo-zone-sunset-bar-imagen/bo-zone-sunset-bar-imagen-1.jpg"
+  },
+  "activation.champagne-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/activation-champagne-bar.webp",
+    "width": 2000,
+    "height": 1493,
+    "focus": "55% 55%",
+    "origin": "generated bo-activation-champagne-bar-imagen/bo-activation-champagne-bar-imagen-1.jpg"
+  },
+  "sunset.champagne": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/sunset-champagne.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "45% 35%",
+    "origin": "generated bo-sunset-champagne-imagen/bo-sunset-champagne-imagen-1.jpg"
   }
 }

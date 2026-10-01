@@ -1194,3 +1194,31 @@ Six concept boards (`media-src/boards/board-1…6.png`, 1536×1024 or 1672×941)
 | Umbrellas | Up to ~20 in the hero wides | 8–15 | Reduce in masters. |
 | Lighting | Purple accents in `sunset.evening` | Warm practical light only | Correct the grade. |
 | Brand-like detail | "PORSCHE" / "RANGE ROVER" tailgates; logo-like marks on some buckets; gold bottle labels | No third-party marks | Badges and bucket marks blurred in crops. Gold labels are illegible but evoke real houses; regenerate with blank labels. |
+
+## 13. Media Pass 02 — generated set (audit log)
+
+40 slots now use generated images (`media-src/generation/selects.json` → `scripts/media/promote.mjs`). Every pick was reviewed against the bible before promotion.
+
+**Model choice:**
+- **FLUX 1.1 Pro Ultra:** wides, macros, people. Board tiles were used as layout guides for production scenes.
+- **Imagen 4 Ultra:** replaced FLUX where FLUX failed the audit. It renders bottles, buckets and goblets correctly and has the best casting mix.
+- **Seedream 4** was tested and rejected: fake bottle labels, clear flutes.
+- **Kontext and Real-ESRGAN:** used for one edit and one upscale (`champagne.still`).
+
+**Rejected in audit:**
+- generated logo text on buckets (FLUX bar shots)
+- fake car badges (FLUX arrival)
+- fringed umbrellas
+- one long tent instead of separate cabanas
+- sexualised rear-view framing at bars
+- gibberish labels on toiletry bottles
+- clear flutes in place of saffron goblets
+
+**Patched in promote** (feathered blur over residual micro-lettering):
+- `activation.cabana`
+- `cabanas.detail`
+
+**Known gaps:**
+- `zone.water` and `people.04` skew Black/mixed and young; acceptable but not the full mix.
+- `sunset.evening` is very dense (reads larger than ~500).
+- `sound.booth` is not rendered by any section, so it was not generated.

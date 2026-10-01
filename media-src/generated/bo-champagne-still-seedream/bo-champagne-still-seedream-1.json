@@ -1,0 +1,20 @@
+{
+  "job": "bo-champagne-still-seedream",
+  "slot": "champagne.still",
+  "model": "bytedance/seedream-4",
+  "input": {
+    "prompt": "Minimal luxury still life on fine pale cream-white coral sand at 4:45 PM: a opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic champagne ice bucket filled with crushed ice beaded with condensation holding two dark green champagne bottles with plain gold foil and blank cream labels; beside it a single opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem half full of pale gold champagne, on a low weathered teak side table; the plain straight edge of a saffron-yellow umbrella canopy entering the top corner; clear turquoise sea softly out of focus behind. Hard warm sun from the left, one long crisp shadow to the right. Low camera, 85mm. The champagne goblets and ice bucket look exactly like the ones in the reference images: opaque glossy deep-saffron acrylic. Absolutely no text, letters, numbers or logos anywhere: ice buckets, bottles, labels, glasses and clothing are completely plain. Women and men are photographed naturally from the front or side as guests enjoying themselves, never posed from behind, never sexualised. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real.",
+    "size": "4K",
+    "aspect_ratio": "3:4",
+    "max_images": 1,
+    "enhance_prompt": false,
+    "image_input": [
+      {
+        "file": "media-src/generated/pour-goblet-b/pour-goblet-b-2.jpg"
+      },
+      {
+        "file": "media-src/generated/champagne-still-edit-2/champagne-still-edit-2-1.png"
+      }
+    ]
+  }
+}
