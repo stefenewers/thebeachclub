@@ -1,0 +1,15 @@
+{
+  "job": "p3-reveal-a-kontext",
+  "slot": "reveal.beach",
+  "model": "black-forest-labs/flux-kontext-max",
+  "input": {
+    "prompt": "This is a real photograph of a private beach on Jamaica's North Coast. Keep the location exactly as it is: the same coastline and curve of the beach, the same sand, sea, reef, rocks, trees, branches, lawn, buildings, headland, sky, light direction and camera position. Do not add, remove or move any trees, rocks, buildings, landforms or piers. Turn it into the same beach during BEACH CLUB, a private Saturday beach party at about 2:45 PM. View A, elevated through the foliage. Keep the foreground leaves, vines and tree trunks exactly as they are. Down on the beach add: five plain saffron-yellow canvas beach umbrellas with natural wood poles (no fringe, no stripes) in two loose groups on the open sand, low natural-wood loungers with cream cushions beneath them, two small temporary cabanas made of a light natural-timber frame with cream fabric, low daybeds inside in the tree shade at the back of the beach on the left, and about 80 to 110 guests spread naturally along the beach in small groups, with around 15 people swimming and standing in the turquoise shallows. The guests are an affluent contemporary Jamaican social crowd, mostly 25 to 40, drawn from Kingston and Jamaica's professional, creative and social circles, with the natural racial diversity found in upper-middle-class and wealthy Jamaica, plus diaspora friends and a smaller number of international guests; small groups who clearly know each other — old friends, couples, people greeting and running into each other — talking and laughing, not posing, mostly not facing the camera; light linen shirts, knit polos, swim shorts, swimwear, crochet and resort dresses in white, cream, sand, black and olive; waiters in white short-sleeve linen shirts. Leave plenty of empty sand and leave the trees untouched. No text, no logos, no signage, no flags added, no stage, no lighting rigs, no tents, no pergolas, no fringe or tassels on umbrellas, no rows of umbrellas, no permanent structures. High-end candid event photography, observational, 35mm documentary feel, unposed, natural imperfections, real hard 2:45 PM Caribbean sun, fine film grain, protected highlights, no HDR, no render perfection.",
+    "seed": 3301,
+    "aspect_ratio": "match_input_image",
+    "output_format": "png",
+    "safety_tolerance": 2,
+    "input_image": {
+      "file": "media-src/venue-reference/jamaicaescapes/frankfort_on_the_beach_prospect_plantation_ocho_rios_jamaica_51.jpg"
+    }
+  }
+}

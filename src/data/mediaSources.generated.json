@@ -12,10 +12,10 @@
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/reveal-beach.webp",
-    "width": 2752,
-    "height": 1536,
-    "focus": "62% 60%",
-    "origin": "generated reveal-beach-b/reveal-beach-b-2.jpg"
+    "width": 3200,
+    "height": 2146,
+    "focus": "40% 70%",
+    "origin": "generated p3e-reveal-a-clean/p3e-reveal-a-clean-1.jpg"
   },
   "reveal.foliage": {
     "provider": "local",
@@ -139,9 +139,9 @@
     "kind": "image",
     "desktop": "/media/gen/zone-garden-lounge.webp",
     "width": 2000,
-    "height": 1333,
-    "focus": "50% 60%",
-    "origin": "generated v3-zone-garden-lounge/v3-zone-garden-lounge-1.jpg"
+    "height": 1341,
+    "focus": "55% 70%",
+    "origin": "generated p3e-reveal-b-clean/p3e-reveal-b-clean-1.jpg"
   },
   "people.01": {
     "provider": "local",
@@ -328,9 +328,9 @@
     "kind": "image",
     "desktop": "/media/gen/zone-champagne-bar.webp",
     "width": 2000,
-    "height": 1493,
-    "focus": "50% 50%",
-    "origin": "generated bo-zone-champagne-bar-imagen/bo-zone-champagne-bar-imagen-1.jpg"
+    "height": 1341,
+    "focus": "45% 65%",
+    "origin": "generated p3e-reveal-c-clean/p3e-reveal-c-clean-1.jpg"
   },
   "zone.sunset-bar": {
     "provider": "local",

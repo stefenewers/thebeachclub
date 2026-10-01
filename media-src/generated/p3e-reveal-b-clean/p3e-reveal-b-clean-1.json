@@ -1,0 +1,17 @@
+{
+  "job": "p3e-reveal-b-clean",
+  "slot": "reveal.beach",
+  "model": "google/nano-banana-pro",
+  "input": {
+    "prompt": "Edit this photo minimally. Every champagne bottle gets a plain blank cream label and plain gold foil — no yellow or orange labels, no crests, no writing. Remove any logo, crest, word, letter or number from buckets, glasses, mats, speakers and clothing. Change nothing else at all: keep every person, face, pose, object, tree, building, the sand, water, sky, light and framing exactly identical.",
+    "aspect_ratio": "match_input_image",
+    "resolution": "4K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high",
+    "image_input": [
+      {
+        "file": "media-src/generated/p3e-reveal-b/p3e-reveal-b-2.jpg"
+      }
+    ]
+  }
+}

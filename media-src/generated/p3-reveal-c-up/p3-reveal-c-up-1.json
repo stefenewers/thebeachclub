@@ -1,0 +1,12 @@
+{
+  "job": "p3-reveal-c-up",
+  "slot": "reveal.beach",
+  "model": "nightmareai/real-esrgan",
+  "input": {
+    "scale": 2,
+    "face_enhance": false,
+    "image": {
+      "file": "media-src/generated/p3-reveal-c-banana-r2/p3-reveal-c-banana-r2-2.png"
+    }
+  }
+}

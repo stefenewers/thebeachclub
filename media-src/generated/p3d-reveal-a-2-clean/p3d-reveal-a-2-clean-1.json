@@ -1,0 +1,17 @@
+{
+  "job": "p3d-reveal-a-2-clean",
+  "slot": "reveal.beach",
+  "model": "google/nano-banana-pro",
+  "input": {
+    "prompt": "Edit this photo minimally. Remove every logo, crest, emblem, printed word, letter and number from all objects: the yellow ice buckets become plain glossy saffron-yellow acrylic with no marks; the yellow goblets become plain with no marks; every champagne bottle gets a plain blank cream label and plain gold foil (no yellow labels, no crests); bar mats become plain black rubber; speakers and decks become plain black with no branding. Change nothing else at all: keep every person, face, pose, piece of furniture, tree, building, the sand, the water, the sky, the light and the camera framing exactly identical.",
+    "aspect_ratio": "match_input_image",
+    "resolution": "4K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high",
+    "image_input": [
+      {
+        "file": "media-src/generated/p3d-reveal-a/p3d-reveal-a-2.jpg"
+      }
+    ]
+  }
+}
