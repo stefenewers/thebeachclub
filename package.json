@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "media:extract": "bash scripts/extract-media-pass-01.sh",
+    "predev": "npm run media:extract",
+    "prebuild": "npm run media:extract",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
