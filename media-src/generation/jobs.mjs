@@ -248,6 +248,44 @@ const PASS03C = Object.keys(DENSITY4).map((v) => ({
   prompt: `${KEEP3} Turn it into the same beach during BEACH CLUB, a sold-out private premium beach event for about 500 guests. ${DENSITY4[v]} The guests are ${CROWD4}. ${ENERGY4}. ${PROD4}. ${NEVER4}. ${PHOTO4}.`,
 }));
 
+/* ===================================================================
+ * Media Pass 03c — social direction + event design. Same plates and
+ * geography locks; zones and social clusters instead of headcounts.
+ * ================================================================= */
+const GEO5 =
+  "This is a real photograph of a private beach estate on Jamaica's North Coast. Preserve the geography exactly: the same shoreline and curve of the beach, sand proportions, rocks, water, reef, every tree, branch and leaf, the lawn, every building, the headland, the sky and the camera position, angle and lens. Change ONLY people, furniture, event production, wardrobe and movement.";
+const SOCIAL5 =
+  "The guests are a young, stylish, sexy-but-sophisticated Jamaican crowd, mostly 25 to 40 — Kingston young professionals, creatives, finance, law, tech, founders, hospitality and fashion people, diaspora home from Miami, New York and London — with a few older, socially prominent guests mixed in naturally, and the natural racial diversity of upper-middle-class Jamaica. Half of them know each other. Wardrobe: premium bikinis and one-piece swimsuits, crochet cover-ups, linen trousers, open linen shirts, knit polos, tailored swim shorts, resort sets, sunglasses, tasteful gold jewellery, beautiful beach bags, barefoot or premium sandals; colours natural and mixed. No long formal dresses, no buttoned-up or all-white outfits, no matching group styling, no suits, no tourists, no families, no children.";
+const PARTY5 =
+  "It is about 4 PM, the sun is blazing, good house music is playing and the party has been going for two hours. Build the scene from overlapping SOCIAL CLUSTERS, not evenly spaced people: friends laughing while walking with arms around shoulders, people hugging as they greet each other, women sitting on the edges of daybeds talking animatedly, people raising glasses, someone pulling a friend toward the music, people coming out of the water dripping, couples crossing the scene, a server passing through with a tray of champagne goblets. Nobody stands still with arms at their sides, nobody poses, nobody looks at the camera, no polite cocktail circles, no wedding-reception posture.";
+const MUSIC5 =
+  "ONE clearly visible but restrained DJ set-up: a low, waist-height natural-timber DJ console with a white top and plain unbranded decks, a DJ in an open linen shirt mid-mix, two compact professional black speakers on short stands; no stage, no truss, no lights, no LED, no backdrop. Around it 20 to 40 people loosely dancing, moving and watching — it must be obvious that music is the centre of the party.";
+const BAR5 =
+  "ONE expensive-feeling, custom-fitted champagne bar about four metres long: clean architectural proportions, a thick white stone solid-surface top, front cladding in refined vertical natural timber with matte saffron-yellow panels, integrated ice wells, neat rows of glossy saffron-yellow acrylic champagne goblets, saffron-yellow acrylic ice buckets of dark green bottles with plain gold foil, three or four bartenders in white linen working fast, a bottle being opened, trays leaving the bar, guests leaning on the bar top. Completely free of logos and text.";
+const LOUNGE5 =
+  "Lounge furniture in three or four IRREGULAR clusters, never in rows or a grid and never a pool-deck layout: low teak daybeds and a few low sofas with cream cushions, the odd saffron accent pillow, small side tables with yellow champagne buckets, folded towels. Leave natural sand empty between clusters.";
+const YELLOW5 =
+  "Yellow is a champagne accent, not a theme: at most five to seven plain saffron canvas umbrellas with natural wood poles (no fringe, no scallops, no stripes), plus the goblets, buckets, a few towels and cushions and bar accents. Everything else is natural timber, white and cream linen and a little black, against the green trees, cream sand and turquoise water.";
+const DEPTH5 =
+  "Shoot it like real event photography — beautifully messy, layered and occluded: in the foreground, partial people crossing the frame, a shoulder or back, a goblet close to the lens; in the midground the main social activity; in the background water, cabanas, smaller figures and landscape. People overlap and partly block each other; nobody has a clean isolated silhouette. Candid 35mm documentary feel, hard bright afternoon light, fine film grain, protected highlights. Not property-listing, resort-campaign or wedding photography.";
+const NEVER5 = "No text, no logos, no signage, no flags added, no tents, no marquees, no pergolas, no festival barriers, no giant structures.";
+
+const VIEW5 = {
+  a: `THIS IS THE HERO IMAGE — the viewer should think "what is happening down there?". Keep the foreground leaves, vines, trunk and rocks exactly as they are. Down on the beach: the champagne bar active in the shade under the trees on the left with a crowd leaning in and trays leaving; the DJ console set into the tree line at the back of the beach with a loose dancing crowd in front of it; two or three cabanas (light natural-timber frames with cream linen) deeper along the beach with friend groups inside and sitting on the edges; five to seven umbrellas staggered toward the water; a busy shoreline with groups standing in the shallows, swimmers, people wading in and out; servers moving between zones. Still keep substantial visible sand and water.`,
+  b: `This is the PREMIUM HOSPITALITY zone — calmer and more exclusive than the beach: privacy, service, comfort, money, not mass party energy. Keep the cottage, stone path, every almond tree, the flagpole and the thatched umbrella exactly as they are. On the lawn under the almond trees: two or three beautiful low lounge clusters and two cabanas (light natural-timber frames with cream linen) with seated friend groups being served champagne from yellow buckets by servers in white linen, a small secondary champagne service point, elegant guests in swimwear and linen walking between the cottage and the beach. About 40 to 70 people visible in total, the beach party visible but softer beyond the trees.`,
+  c: `The viewer should feel PHYSICALLY INSIDE Beach Club, as if the photographer just walked in. Keep the villa, its stone base, the thatched umbrella, the overhanging leaves at the top of the frame and the distant headland exactly as they are; remove the white plastic sun loungers. In the near foreground, guests in swimwear crossing the frame holding yellow goblets, partly cut off by the frame edge and slightly out of focus; in the midground the champagne bar beside the thatched umbrella, busy; lounge clusters in front of the villa; umbrellas receding naturally along the beach; people in swimwear at the shoreline and in the water; further down the beach the DJ set-up with people dancing; servers moving through. Shallow cinematic depth of field focused on the midground.`,
+};
+
+const PASS03D = Object.keys(VIEW5).map((v) => ({
+  id: `p3d-reveal-${v}`,
+  slot: "reveal.beach",
+  model: "google/nano-banana-pro",
+  variants: 3,
+  input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+  refs: [{ key: "image_input", list: true, file: REVEAL_VIEWS[v].plate, max: 1200 }],
+  prompt: `${GEO5} Turn it into BEACH CLUB, the most desirable new premium beach event in Jamaica. ${VIEW5[v]} ${v === "b" ? "" : MUSIC5 + " "}${BAR5} ${LOUNGE5} ${YELLOW5} ${SOCIAL5} ${PARTY5} ${DEPTH5} ${NEVER5}`,
+}));
+
 export const jobs = [
   /* ------------------------------------------------------------ P0 wides */
   {
@@ -377,4 +415,18 @@ export const jobs = [
   })),
 
   ...PASS03C,
+
+  ...PASS03D,
+  // De-brand pass: the model drifts into champagne-house trade dress
+  // (crests on buckets, yellow bottle labels, lettered bar mats).
+  ...["a-2", "b-2", "c-2"].map((t) => ({
+    id: `p3d-reveal-${t}-clean`,
+    slot: "reveal.beach",
+    model: "google/nano-banana-pro",
+    variants: 1,
+    input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+    refs: [{ key: "image_input", list: true, file: `media-src/generated/p3d-reveal-${t[0]}/p3d-reveal-${t}.jpg`, max: 3000 }],
+    prompt:
+      "Edit this photo minimally. Remove every logo, crest, emblem, printed word, letter and number from all objects: the yellow ice buckets become plain glossy saffron-yellow acrylic with no marks; the yellow goblets become plain with no marks; every champagne bottle gets a plain blank cream label and plain gold foil (no yellow labels, no crests); bar mats become plain black rubber; speakers and decks become plain black with no branding. Change nothing else at all: keep every person, face, pose, piece of furniture, tree, building, the sand, the water, the sky, the light and the camera framing exactly identical.",
+  })),
 ];
