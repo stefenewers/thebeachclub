@@ -9,7 +9,8 @@
  * and writes src/data/mediaSources.generated.json. media.ts layers these over
  * the board crops, so a promoted slot always wins.
  */
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir, unlink } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -38,21 +39,29 @@ async function soften(file, patches) {
 
 for (const [slot, { file, focus = "50% 50%", patches = [], crop }] of Object.entries(selects)) {
   const cap = FULL.has(slot) ? 3200 : 2000;
-  const rel = `gen/${slot.replace(/\./g, "-")}.webp`;
-  const dest = path.join(ROOT, "public/media", rel);
-  await mkdir(path.dirname(dest), { recursive: true });
+  const base = slot.replace(/\./g, "-");
   let img = sharp(patches.length ? await soften(file, patches) : path.join(GEN, file));
   if (crop) {
     // Fractional [x, y, w, h] — trims distracting edges found in review.
     const { width: w, height: h } = await sharp(path.join(GEN, file)).metadata();
     img = sharp(await img.extract({ left: Math.round(crop[0] * w), top: Math.round(crop[1] * h), width: Math.round(crop[2] * w), height: Math.round(crop[3] * h) }).toBuffer());
   }
-  const info = await img
+  const { data, info } = await img
     .resize(cap, cap, { fit: "inside", withoutEnlargement: true })
     .webp({ quality: 80, effort: 5 })
-    .toFile(dest);
+    .toBuffer({ resolveWithObject: true });
+  // Content-hashed filename: a changed image gets a new URL, so browser and
+  // next/image caches can never serve a stale version.
+  const hash = createHash("sha1").update(data).digest("hex").slice(0, 8);
+  const rel = `gen/${base}-${hash}.webp`;
+  const dir = path.join(ROOT, "public/media/gen");
+  await mkdir(dir, { recursive: true });
+  for (const f of await readdir(dir)) {
+    if ((f === `${base}.webp` || new RegExp(`^${base}-[0-9a-f]{8}\\.webp$`).test(f)) && f !== `${base}-${hash}.webp`) await unlink(path.join(dir, f));
+  }
+  await writeFile(path.join(ROOT, "public/media", rel), data);
   out[slot] = { provider: "local", kind: "image", desktop: `/media/${rel}`, width: info.width, height: info.height, focus, origin: `generated ${file}` };
-  console.log(`${slot.padEnd(28)} ${info.width}x${info.height}  ${(info.size / 1024).toFixed(0)} KB  ← ${file}`);
+  console.log(`${slot.padEnd(28)} ${info.width}x${info.height}  ${(data.length / 1024).toFixed(0)} KB  ← ${file}`);
 }
 await writeFile(path.join(ROOT, "src/data/mediaSources.generated.json"), JSON.stringify(out, null, 2) + "\n");
 console.log(`\n${Object.keys(out).length} promoted → src/data/mediaSources.generated.json`);

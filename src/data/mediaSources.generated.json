@@ -2,7 +2,7 @@
   "arrival.hero": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/arrival-hero.webp",
+    "desktop": "/media/gen/arrival-hero-d88478f8.webp",
     "width": 2752,
     "height": 1536,
     "focus": "60% 40%",
@@ -11,7 +11,7 @@
   "reveal.beach": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/reveal-beach.webp",
+    "desktop": "/media/gen/reveal-beach-8c4d6e7b.webp",
     "width": 3200,
     "height": 2146,
     "focus": "40% 70%",
@@ -20,7 +20,7 @@
   "reveal.foliage": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/reveal-foliage.webp",
+    "desktop": "/media/gen/reveal-foliage-944af3a7.webp",
     "width": 2000,
     "height": 1116,
     "focus": "50% 50%",
@@ -29,7 +29,7 @@
   "pour.bottle": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-bottle.webp",
+    "desktop": "/media/gen/pour-bottle-2fbcc580.webp",
     "width": 1514,
     "height": 2000,
     "focus": "50% 45%",
@@ -38,7 +38,7 @@
   "pour.ice": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-ice.webp",
+    "desktop": "/media/gen/pour-ice-fef384dc.webp",
     "width": 1514,
     "height": 2000,
     "focus": "50% 50%",
@@ -47,7 +47,7 @@
   "pour.goblet": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-goblet.webp",
+    "desktop": "/media/gen/pour-goblet-9b13c334.webp",
     "width": 1514,
     "height": 2000,
     "focus": "50% 50%",
@@ -56,7 +56,7 @@
   "pour.pour": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-pour.webp",
+    "desktop": "/media/gen/pour-pour-8837f157.webp",
     "width": 1514,
     "height": 2000,
     "focus": "45% 45%",
@@ -65,7 +65,7 @@
   "pour.toast": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-toast.webp",
+    "desktop": "/media/gen/pour-toast-91dec3ef.webp",
     "width": 1493,
     "height": 2000,
     "focus": "50% 45%",
@@ -74,7 +74,7 @@
   "pour.wristband": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-wristband.webp",
+    "desktop": "/media/gen/pour-wristband-d9d3d53f.webp",
     "width": 1514,
     "height": 2000,
     "focus": "55% 55%",
@@ -83,7 +83,7 @@
   "pour.sand": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-sand.webp",
+    "desktop": "/media/gen/pour-sand-11f5e0e8.webp",
     "width": 1514,
     "height": 2000,
     "focus": "45% 55%",
@@ -92,7 +92,7 @@
   "pour.sunlight": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/pour-sunlight.webp",
+    "desktop": "/media/gen/pour-sunlight-e89ea325.webp",
     "width": 1514,
     "height": 2000,
     "focus": "60% 40%",
@@ -101,7 +101,7 @@
   "zone.water": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-water.webp",
+    "desktop": "/media/gen/zone-water-b2a4c387.webp",
     "width": 2000,
     "height": 1341,
     "focus": "50% 55%",
@@ -110,7 +110,7 @@
   "zone.shore": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-shore.webp",
+    "desktop": "/media/gen/zone-shore-f5ca08f9.webp",
     "width": 2000,
     "height": 1341,
     "focus": "50% 60%",
@@ -119,7 +119,7 @@
   "zone.cabanas": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-cabanas.webp",
+    "desktop": "/media/gen/zone-cabanas-c96ff179.webp",
     "width": 2000,
     "height": 1341,
     "focus": "60% 60%",
@@ -128,7 +128,7 @@
   "zone.dj-terrace": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-dj-terrace.webp",
+    "desktop": "/media/gen/zone-dj-terrace-5c9e1216.webp",
     "width": 2000,
     "height": 1341,
     "focus": "60% 45%",
@@ -137,7 +137,7 @@
   "zone.garden-lounge": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-garden-lounge.webp",
+    "desktop": "/media/gen/zone-garden-lounge-154a0f42.webp",
     "width": 2000,
     "height": 1341,
     "focus": "55% 70%",
@@ -146,7 +146,7 @@
   "people.01": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-01.webp",
+    "desktop": "/media/gen/people-01-2a0cb5ae.webp",
     "width": 2752,
     "height": 1536,
     "focus": "60% 45%",
@@ -155,7 +155,7 @@
   "people.02": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-02.webp",
+    "desktop": "/media/gen/people-02-8f4b0dd8.webp",
     "width": 1611,
     "height": 2000,
     "focus": "50% 35%",
@@ -164,7 +164,7 @@
   "people.03": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-03.webp",
+    "desktop": "/media/gen/people-03-ca33d82f.webp",
     "width": 1493,
     "height": 2000,
     "focus": "50% 35%",
@@ -173,7 +173,7 @@
   "people.04": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-04.webp",
+    "desktop": "/media/gen/people-04-7bf6d313.webp",
     "width": 1611,
     "height": 2000,
     "focus": "50% 45%",
@@ -182,7 +182,7 @@
   "people.05": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-05.webp",
+    "desktop": "/media/gen/people-05-32ae69e7.webp",
     "width": 3200,
     "height": 1786,
     "focus": "50% 55%",
@@ -191,7 +191,7 @@
   "people.06": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/people-06.webp",
+    "desktop": "/media/gen/people-06-2cce8a5c.webp",
     "width": 1514,
     "height": 2000,
     "focus": "50% 30%",
@@ -200,7 +200,7 @@
   "champagne.still": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/champagne-still.webp",
+    "desktop": "/media/gen/champagne-still-baa694bd.webp",
     "width": 1710,
     "height": 2000,
     "focus": "60% 55%",
@@ -209,7 +209,7 @@
   "champagne.umbrella": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/champagne-umbrella.webp",
+    "desktop": "/media/gen/champagne-umbrella-8d5ceded.webp",
     "width": 2000,
     "height": 1333,
     "focus": "50% 50%",
@@ -218,7 +218,7 @@
   "activation.shoreline-lounge": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-shoreline-lounge.webp",
+    "desktop": "/media/gen/activation-shoreline-lounge-67b07879.webp",
     "width": 2000,
     "height": 1341,
     "focus": "50% 55%",
@@ -227,7 +227,7 @@
   "activation.sunset-tequila": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-sunset-tequila.webp",
+    "desktop": "/media/gen/activation-sunset-tequila-6cbc03e4.webp",
     "width": 2000,
     "height": 1493,
     "focus": "50% 45%",
@@ -236,7 +236,7 @@
   "activation.arrival-valet": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-arrival-valet.webp",
+    "desktop": "/media/gen/activation-arrival-valet-bfa928b3.webp",
     "width": 2000,
     "height": 1514,
     "focus": "50% 50%",
@@ -245,7 +245,7 @@
   "activation.cabana": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-cabana.webp",
+    "desktop": "/media/gen/activation-cabana-4505964a.webp",
     "width": 2000,
     "height": 1493,
     "focus": "45% 55%",
@@ -254,7 +254,7 @@
   "activation.beauty-refresh": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-beauty-refresh.webp",
+    "desktop": "/media/gen/activation-beauty-refresh-b1ccef77.webp",
     "width": 2000,
     "height": 1493,
     "focus": "45% 55%",
@@ -263,7 +263,7 @@
   "activation.resortwear": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-resortwear.webp",
+    "desktop": "/media/gen/activation-resortwear-d78b4ac6.webp",
     "width": 2000,
     "height": 1514,
     "focus": "50% 40%",
@@ -272,7 +272,7 @@
   "activation.content-installation": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-content-installation.webp",
+    "desktop": "/media/gen/activation-content-installation-9e13eaa2.webp",
     "width": 2000,
     "height": 1514,
     "focus": "50% 55%",
@@ -281,7 +281,7 @@
   "cabanas.hero": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/cabanas-hero.webp",
+    "desktop": "/media/gen/cabanas-hero-87420ed7.webp",
     "width": 3200,
     "height": 2146,
     "focus": "45% 60%",
@@ -290,7 +290,7 @@
   "cabanas.detail": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/cabanas-detail.webp",
+    "desktop": "/media/gen/cabanas-detail-18e018db.webp",
     "width": 1514,
     "height": 2000,
     "focus": "50% 45%",
@@ -299,7 +299,7 @@
   "sunset.crowd": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/sunset-crowd.webp",
+    "desktop": "/media/gen/sunset-crowd-8d0c4a3f.webp",
     "width": 2752,
     "height": 1536,
     "focus": "50% 45%",
@@ -308,7 +308,7 @@
   "sunset.ocean": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/sunset-ocean.webp",
+    "desktop": "/media/gen/sunset-ocean-5b3c2a58.webp",
     "width": 2752,
     "height": 1536,
     "focus": "50% 45%",
@@ -317,7 +317,7 @@
   "sunset.evening": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/sunset-evening.webp",
+    "desktop": "/media/gen/sunset-evening-02af13f5.webp",
     "width": 2752,
     "height": 1536,
     "focus": "50% 55%",
@@ -326,7 +326,7 @@
   "zone.champagne-bar": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-champagne-bar.webp",
+    "desktop": "/media/gen/zone-champagne-bar-7aa1e4de.webp",
     "width": 2000,
     "height": 1341,
     "focus": "45% 65%",
@@ -335,7 +335,7 @@
   "zone.sunset-bar": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/zone-sunset-bar.webp",
+    "desktop": "/media/gen/zone-sunset-bar-eedd4b0e.webp",
     "width": 2000,
     "height": 1493,
     "focus": "50% 45%",
@@ -344,7 +344,7 @@
   "activation.champagne-bar": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/activation-champagne-bar.webp",
+    "desktop": "/media/gen/activation-champagne-bar-7614c241.webp",
     "width": 2000,
     "height": 1493,
     "focus": "55% 55%",
@@ -353,7 +353,7 @@
   "sunset.champagne": {
     "provider": "local",
     "kind": "image",
-    "desktop": "/media/gen/sunset-champagne.webp",
+    "desktop": "/media/gen/sunset-champagne-61bdcc37.webp",
     "width": 2752,
     "height": 1536,
     "focus": "45% 35%",
