@@ -46,7 +46,7 @@ export function Sunset() {
         });
         const end = fr.length;
         tl.fromTo("[data-sun]", { yPercent: -60 }, { yPercent: 70, duration: end + 0.6 }, 0)
-          .fromTo("[data-warm]", { opacity: 0.1 }, { opacity: 0.55, duration: end }, 0)
+          .fromTo("[data-warm]", { opacity: 0.05 }, { opacity: 0.28, duration: end }, 0)
           .to(st[st.length - 1], { opacity: 0, duration: 0.1 }, end - 0.1)
           .to("[data-night]", { opacity: 0.72, duration: 0.6 }, end - 0.2)
           .from("[data-char]", { yPercent: 105, opacity: 0, duration: 0.4, stagger: 0.02 }, end + 0.1)

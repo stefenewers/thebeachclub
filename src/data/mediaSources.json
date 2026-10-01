@@ -1,0 +1,326 @@
+{
+  "arrival.hero": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/arrival/hero.webp",
+    "width": 2400,
+    "height": 1352,
+    "focus": "50% 55%",
+    "origin": "board-3 433x244"
+  },
+  "reveal.foliage": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/reveal/foliage.webp",
+    "width": 2130,
+    "height": 2052,
+    "focus": "50% 50%",
+    "origin": "board-6 355x342"
+  },
+  "reveal.beach": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/reveal/beach.webp",
+    "width": 2400,
+    "height": 1350,
+    "focus": "55% 60%",
+    "origin": "board-5 898x505"
+  },
+  "pour.bottle": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/first-pour/bottle.webp",
+    "width": 1170,
+    "height": 1560,
+    "focus": "50% 40%",
+    "origin": "board-3 195x260"
+  },
+  "pour.ice": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/first-pour/ice.webp",
+    "width": 1020,
+    "height": 1362,
+    "focus": "50% 45%",
+    "origin": "board-4 170x227"
+  },
+  "pour.goblet": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/first-pour/goblet.webp",
+    "width": 900,
+    "height": 1200,
+    "focus": "50% 45%",
+    "origin": "board-4 150x200"
+  },
+  "pour.pour": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/first-pour/pour.webp",
+    "width": 900,
+    "height": 1200,
+    "focus": "50% 45%",
+    "origin": "board-6 150x200"
+  },
+  "pour.toast": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/first-pour/toast.webp",
+    "width": 900,
+    "height": 1200,
+    "focus": "50% 40%",
+    "origin": "board-2 150x200"
+  },
+  "zone.water": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/water.webp",
+    "width": 1400,
+    "height": 935,
+    "focus": "50% 60%",
+    "origin": "board-6 322x215"
+  },
+  "zone.shore": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/shore.webp",
+    "width": 1400,
+    "height": 935,
+    "focus": "60% 50%",
+    "origin": "board-2 370x247"
+  },
+  "zone.sunset-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/sunset-bar.webp",
+    "width": 1400,
+    "height": 933,
+    "focus": "55% 50%",
+    "origin": "board-6 363x242"
+  },
+  "zone.cabanas": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/cabanas.webp",
+    "width": 1400,
+    "height": 935,
+    "focus": "50% 50%",
+    "origin": "board-2 370x247"
+  },
+  "zone.champagne-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/champagne-bar.webp",
+    "width": 1400,
+    "height": 935,
+    "focus": "55% 55%",
+    "origin": "board-2 370x247"
+  },
+  "zone.dj-terrace": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/dj-terrace.webp",
+    "width": 1400,
+    "height": 932,
+    "focus": "62% 45%",
+    "origin": "board-2 338x225"
+  },
+  "zone.garden-lounge": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/zones/garden-lounge.webp",
+    "width": 1400,
+    "height": 913,
+    "focus": "45% 55%",
+    "origin": "board-3 368x240"
+  },
+  "people.01": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/01.webp",
+    "width": 2190,
+    "height": 1230,
+    "focus": "50% 40%",
+    "origin": "board-2 365x205"
+  },
+  "people.02": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/02.webp",
+    "width": 1056,
+    "height": 1320,
+    "focus": "50% 35%",
+    "origin": "board-1 176x220"
+  },
+  "people.03": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/03.webp",
+    "width": 1044,
+    "height": 1392,
+    "focus": "50% 35%",
+    "origin": "board-3 174x232"
+  },
+  "people.04": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/04.webp",
+    "width": 1400,
+    "height": 1747,
+    "focus": "50% 40%",
+    "origin": "board-3 266x332"
+  },
+  "people.05": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/05.webp",
+    "width": 2226,
+    "height": 1254,
+    "focus": "50% 40%",
+    "origin": "board-4 371x209"
+  },
+  "people.06": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/people/06.webp",
+    "width": 1032,
+    "height": 1380,
+    "focus": "50% 35%",
+    "origin": "board-6 172x230"
+  },
+  "sound.booth": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/sound/booth.webp",
+    "width": 1332,
+    "height": 1668,
+    "focus": "50% 40%",
+    "origin": "board-6 222x278"
+  },
+  "champagne.umbrella": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/champagne/umbrella.webp",
+    "width": 1200,
+    "height": 798,
+    "focus": "60% 40%",
+    "origin": "board-2 200x133"
+  },
+  "champagne.still": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/champagne/still.webp",
+    "width": 1400,
+    "height": 1749,
+    "focus": "50% 50%",
+    "origin": "board-2 269x336"
+  },
+  "activation.champagne-bar": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/champagne-bar.webp",
+    "width": 1400,
+    "height": 1052,
+    "focus": "50% 50%",
+    "origin": "board-5 346x260"
+  },
+  "activation.shoreline-lounge": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/shoreline-lounge.webp",
+    "width": 1400,
+    "height": 1050,
+    "focus": "50% 55%",
+    "origin": "board-2 340x255"
+  },
+  "activation.sunset-tequila": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/sunset-tequila.webp",
+    "width": 1400,
+    "height": 1050,
+    "focus": "50% 45%",
+    "origin": "board-2 340x255"
+  },
+  "activation.arrival-valet": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/arrival-valet.webp",
+    "width": 1400,
+    "height": 1051,
+    "focus": "62% 55%",
+    "origin": "board-2 401x301"
+  },
+  "activation.cabana": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/cabana.webp",
+    "width": 1400,
+    "height": 1052,
+    "focus": "50% 55%",
+    "origin": "board-6 370x278"
+  },
+  "activation.resortwear": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/activations/resortwear.webp",
+    "width": 1400,
+    "height": 1053,
+    "focus": "55% 40%",
+    "origin": "board-2 246x185"
+  },
+  "cabanas.hero": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/cabanas/hero.webp",
+    "width": 2142,
+    "height": 1206,
+    "focus": "70% 50%",
+    "origin": "board-5 357x201"
+  },
+  "cabanas.detail": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/cabanas/detail.webp",
+    "width": 1248,
+    "height": 1668,
+    "focus": "50% 55%",
+    "origin": "board-6 208x278"
+  },
+  "sunset.crowd": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/sunset/crowd.webp",
+    "width": 2400,
+    "height": 1351,
+    "focus": "50% 50%",
+    "origin": "board-6 430x242"
+  },
+  "sunset.ocean": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/sunset/ocean.webp",
+    "width": 2130,
+    "height": 1200,
+    "focus": "45% 50%",
+    "origin": "board-1 355x200"
+  },
+  "sunset.evening": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/sunset/evening.webp",
+    "width": 2070,
+    "height": 1164,
+    "focus": "50% 50%",
+    "origin": "board-2 345x194"
+  },
+  "sunset.champagne": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/sunset/champagne.webp",
+    "width": 1290,
+    "height": 1440,
+    "focus": "50% 40%",
+    "origin": "board-1 215x240"
+  }
+}

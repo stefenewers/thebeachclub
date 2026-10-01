@@ -2,12 +2,17 @@
 
 import { useId, useRef } from "react";
 import { copy } from "@/data/event";
+import { getMedia } from "@/data/media";
+import { hasAsset } from "@/lib/media";
 import { gsap, MOTION_OK, useGSAP } from "@/lib/gsap";
 import { Media } from "@/components/media/Media";
 import { CanopyScene } from "@/components/media/plates/scenes";
 import { useExperience } from "@/components/providers/Experience";
 import { Section } from "@/components/ui/Section";
 import { SplitLines } from "@/components/ui/Split";
+
+/** Real foliage photography replaces the drawn leaf layers when delivered. */
+const photoFoliage = hasAsset(getMedia("reveal.foliage"));
 
 /** 02 — The Reveal. Push through the foliage; the beach opens up. */
 export function Reveal() {
@@ -34,11 +39,16 @@ export function Reveal() {
         });
         // Narrow screens need a longer push for the foliage to clear the frame.
         const push = () => (window.innerWidth < 768 ? 125 : 80);
-        tl.fromTo("[data-beach]", { scale: 1.32 }, { scale: 1, duration: 1 }, 0)
-          .fromTo("[data-leaves='left']", { xPercent: 0, scale: 1.05 }, { xPercent: () => -push(), scale: 1.3, duration: 0.7 }, 0)
-          .fromTo("[data-leaves='right']", { xPercent: 0, scale: 1.05 }, { xPercent: () => push(), scale: 1.3, duration: 0.7 }, 0)
-          .fromTo("[data-leaves='top']", { yPercent: 0 }, { yPercent: -90, duration: 0.6 }, 0.05)
-          .fromTo("[data-veil]", { opacity: 0.55 }, { opacity: 0, duration: 0.5 }, 0)
+        tl.fromTo("[data-beach]", { scale: 1.32 }, { scale: 1, duration: 1 }, 0);
+        if (photoFoliage) {
+          // Fly through the leaves: the foliage frame grows past the viewport and dissolves.
+          tl.fromTo("[data-leaves='photo']", { scale: 1, opacity: 1 }, { scale: 2.8, opacity: 0, duration: 0.6, ease: "power1.in" }, 0);
+        } else {
+          tl.fromTo("[data-leaves='left']", { xPercent: 0, scale: 1.05 }, { xPercent: () => -push(), scale: 1.3, duration: 0.7 }, 0)
+            .fromTo("[data-leaves='right']", { xPercent: 0, scale: 1.05 }, { xPercent: () => push(), scale: 1.3, duration: 0.7 }, 0)
+            .fromTo("[data-leaves='top']", { yPercent: 0 }, { yPercent: -90, duration: 0.6 }, 0.05);
+        }
+        tl.fromTo("[data-veil]", { opacity: 0.55 }, { opacity: 0, duration: 0.5 }, 0)
           .from("[data-line]", { yPercent: 110, duration: 0.25, stagger: 0.06 }, 0.62)
           .from("[data-caption]", { opacity: 0, duration: 0.2 }, 0.8);
       });
@@ -59,16 +69,23 @@ export function Reveal() {
         </div>
         <div aria-hidden data-veil className="absolute inset-0 bg-[#0B1A13]" />
 
-        {/* foreground foliage — swapped for `reveal.foliage` cut-outs when delivered */}
-        <div aria-hidden data-leaves="left" className="absolute inset-y-[-10%] left-[-25%] w-[85%] will-change-transform">
-          <CanopyScene uid={`${uid}l`} transparent side="left" />
-        </div>
-        <div aria-hidden data-leaves="right" className="absolute inset-y-[-10%] right-[-25%] w-[85%] will-change-transform">
-          <CanopyScene uid={`${uid}r`} transparent side="right" />
-        </div>
-        <div aria-hidden data-leaves="top" className="absolute inset-x-[-10%] top-[-20%] h-[70%] will-change-transform">
-          <CanopyScene uid={`${uid}t`} transparent y={[-200, 520]} />
-        </div>
+        {photoFoliage ? (
+          <div aria-hidden data-leaves="photo" className="absolute inset-0 will-change-transform">
+            <Media id="reveal.foliage" eager hideLabel />
+          </div>
+        ) : (
+          <>
+            <div aria-hidden data-leaves="left" className="absolute inset-y-[-10%] left-[-25%] w-[85%] will-change-transform">
+              <CanopyScene uid={`${uid}l`} transparent side="left" />
+            </div>
+            <div aria-hidden data-leaves="right" className="absolute inset-y-[-10%] right-[-25%] w-[85%] will-change-transform">
+              <CanopyScene uid={`${uid}r`} transparent side="right" />
+            </div>
+            <div aria-hidden data-leaves="top" className="absolute inset-x-[-10%] top-[-20%] h-[70%] will-change-transform">
+              <CanopyScene uid={`${uid}t`} transparent y={[-200, 520]} />
+            </div>
+          </>
+        )}
 
         <div className="gutter pointer-events-none relative z-10 flex h-full flex-col items-center justify-center pb-[22vh] text-center text-white md:pb-[16vh]">
           <h2 id="reveal-title" className="t-display text-[clamp(2.5rem,12vw,4.75rem)] drop-shadow-[0_2px_30px_rgba(0,40,40,0.35)] md:text-[clamp(4rem,9.5vw,11rem)]">

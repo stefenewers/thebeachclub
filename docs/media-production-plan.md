@@ -1149,3 +1149,48 @@ Record GPS coordinates and the compass bearing of the shoreline to finalise the 
 5. Should `sound.booth` be retired or given a place on the page?
 6. Legal review of the solaire palette relative to champagne-house colour trademarks (§8.6).
 7. Final confirmation of the event date, which fixes exact sun times.
+
+---
+
+## 12. Interim assets — Media Pass 01 boards (status log)
+
+Six concept boards (`media-src/boards/board-1…6.png`, 1536×1024 or 1672×941) were cut into slot assets by `scripts/media/crop-boards.mjs`. The script crops each tile, softens any baked-in board label with a feathered blur, removes visible car badges and bucket marks, upscales with Lanczos, writes WebP to `public/media/`, and generates `src/data/mediaSources.json`, which `media.ts` merges into the manifest.
+
+**These are concept previews, not production masters.** Source tiles are 150–900 px wide and upscaled 2.5–6×, so they read soft on large retina screens. Replace each with a master that meets §4.1.
+
+### Filled (36 slots)
+
+- arrival: `arrival.hero` (still)
+- reveal: `reveal.beach`, `reveal.foliage` (photo push-through replaces the drawn leaves)
+- first pour: `pour.bottle`, `pour.ice`, `pour.goblet`, `pour.pour`, new `pour.toast`
+- zones: all 7 `zone.*`
+- people: all 6 `people.*`
+- sound: `sound.booth` (still not rendered)
+- champagne: `champagne.still`, `champagne.umbrella`
+- activations: `activation.champagne-bar`, `shoreline-lounge`, `sunset-tequila`, `arrival-valet`, `cabana`, `resortwear`
+- cabanas: `cabanas.hero`, `cabanas.detail`
+- sunset: `sunset.crowd`, `sunset.ocean`, `sunset.evening`, `sunset.champagne`
+
+### Still plates / missing
+
+- `pour.wristband`, `pour.sand`, `pour.sunlight`: hidden while First Pour has photos
+- `activation.beauty-refresh`, `activation.content-installation`
+- `audio.ambient`
+
+### Manifest changes made
+
+- `sunset.dj` → **`sunset.evening`** (lantern-lit crowd after sunset). Sequence order is now crowd → ocean → evening → champagne.
+- Stamps are now 6:38 / 6:48 / 7:30 / 7:45 PM.
+- Added `pour.toast`.
+- `MediaSource` gained `kind`, `focus` (object-position per slot) and `origin` (board provenance).
+
+### Where the boards drift from this plan (fix in production masters)
+
+| Topic | Boards show | Plan says | Recommendation |
+|---|---|---|---|
+| Champagne bucket | Solaire-yellow acrylic bucket | Brushed steel | Adopt the **yellow acrylic bucket** into the bible (§3.5). It is consistent across every board and reads strongly. |
+| DJ booth | Booth with the **sea behind the DJ** | Booth faces the sea | Decide once venue geometry is known. Boards are consistent with each other. |
+| Casting | Mostly young Black women in yellow swimwear; few white or international guests | Naturally mixed; yellow belongs to the environment | Rebalance casting and wardrobe in final generation. |
+| Umbrellas | Up to ~20 in the hero wides | 8–15 | Reduce in masters. |
+| Lighting | Purple accents in `sunset.evening` | Warm practical light only | Correct the grade. |
+| Brand-like detail | "PORSCHE" / "RANGE ROVER" tailgates; logo-like marks on some buckets; gold bottle labels | No third-party marks | Badges and bucket marks blurred in crops. Gold labels are illegible but evoke real houses; regenerate with blank labels. |

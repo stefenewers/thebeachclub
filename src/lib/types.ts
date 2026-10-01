@@ -53,6 +53,7 @@ export type StillSubject =
   | "bottle"
   | "ice"
   | "goblet"
+  | "toast"
   | "pour"
   | "wristband"
   | "sand"
@@ -75,6 +76,12 @@ export interface PlateSpec {
 /** A delivered asset. Absent until real media exists. */
 export interface MediaSource {
   provider: MediaProvider;
+  /** Asset type when it differs from the slot (e.g. a still poster in a video slot). */
+  kind?: "image" | "video";
+  /** CSS object-position — keeps the subject in frame across desktop/mobile crops. */
+  focus?: string;
+  /** Provenance, e.g. "board-5 898x505" for interim concept crops. */
+  origin?: string;
   /** Local path, Cloudinary public id, or Mux playback id. */
   desktop: string;
   /** Optional art-directed mobile cut (same provider). */

@@ -372,6 +372,7 @@ const STILL_BG: Record<StillSubject, Stop[]> = {
   bottle: [[0, "#F6EFE2"], [1, "#E3D2B3"]],
   ice: [[0, "#E6F4F2"], [1, "#9FD3CD"]],
   goblet: [[0, "#F4EBDC"], [1, "#E6D3B2"]],
+  toast: [[0, "#F4EBDC"], [1, "#E6D3B2"]],
   pour: [[0, "#2A1D12"], [0.6, "#5A3A18"], [1, "#B47B2E"]],
   wristband: [[0, "#8A5636"], [1, "#4E2E1E"]],
   sand: [[0, "#F2E9DA"], [1, "#DCC8A6"]],
@@ -421,6 +422,7 @@ export function StillScene({ uid, subject = "bottle" }: { uid: string; subject?:
       });
       break;
     case "goblet":
+    case "toast":
       body = (
         <>
           <ellipse cx="450" cy="1010" rx="210" ry="30" fill="#A68A5E" opacity="0.3" />

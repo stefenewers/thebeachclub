@@ -105,7 +105,7 @@ export const copy = {
   },
   sunset: {
     /** The only text in the sequence: time stamps. */
-    stamps: ["5:48 PM", "6:12 PM", "6:31 PM", "6:44 PM"],
+    stamps: ["6:38 PM", "6:48 PM", "7:30 PM", "7:45 PM"],
     final: ["You should have", "been here."],
   },
   end: {

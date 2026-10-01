@@ -51,7 +51,7 @@ export function Media({ id, sizes = "100vw", className = "", style, frame, hideL
   const isEager = eager ?? slot.preload ?? false;
   return (
     <div className={`grain absolute inset-0 overflow-hidden ${className}`} style={style} data-media={slot.id}>
-      {slot.source && slot.kind === "video" ? (
+      {slot.source && (slot.source.kind ?? slot.kind) === "video" ? (
         <AdaptiveVideo slot={slot} eager={isEager} />
       ) : slot.source ? (
         <AssetImage slot={slot} sizes={sizes} eager={isEager} />
@@ -120,7 +120,7 @@ function AssetImage({ slot, sizes, eager }: { slot: MediaSlot; sizes: string; ea
   };
 
   if (!src.mobile) {
-    return <Image {...common} alt={slot.alt} src={src.desktop} fill className="object-cover" />;
+    return <Image {...common} alt={slot.alt} src={src.desktop} fill className="object-cover" style={{ objectPosition: src.focus }} />;
   }
 
   // Art direction: separate vertical cut for small screens.
@@ -135,7 +135,7 @@ function AssetImage({ slot, sizes, eager }: { slot: MediaSlot; sizes: string; ea
     <picture>
       <source media="(min-width: 768px)" srcSet={desktop} />
       <source srcSet={mobile} />
-      <img {...rest} alt={slot.alt} className="absolute inset-0 h-full w-full object-cover" />
+      <img {...rest} alt={slot.alt} className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: src.focus }} />
     </picture>
   );
 }

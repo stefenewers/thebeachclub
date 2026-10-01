@@ -3,12 +3,15 @@
 import { useRef } from "react";
 import { copy } from "@/data/event";
 import { media } from "@/data/media";
+import { hasAsset } from "@/lib/media";
 import { DESKTOP, gsap, MOTION_OK, useGSAP } from "@/lib/gsap";
 import { Media } from "@/components/media/Media";
 import { Section, SectionIndex } from "@/components/ui/Section";
 import { SplitLines } from "@/components/ui/Split";
 
-const frames = media.filter((m) => m.section === "first-pour");
+const all = media.filter((m) => m.section === "first-pour");
+/** Once real media exists, show only delivered frames — never mix photos with plates. */
+const frames = all.some(hasAsset) ? all.filter(hasAsset) : all;
 
 /**
  * 03 — First Pour. Editorial macro sequence.
