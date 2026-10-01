@@ -286,6 +286,43 @@ const PASS03D = Object.keys(VIEW5).map((v) => ({
   prompt: `${GEO5} Turn it into BEACH CLUB, the most desirable new premium beach event in Jamaica. ${VIEW5[v]} ${v === "b" ? "" : MUSIC5 + " "}${BAR5} ${LOUNGE5} ${YELLOW5} ${SOCIAL5} ${PARTY5} ${DEPTH5} ${NEVER5}`,
 }));
 
+/* ===================================================================
+ * Media Pass 03d — naturalism. Same plates + GEO5. Fewer instructions
+ * about objects, more about lived-in behaviour. Yellow cut ~40%.
+ * ================================================================= */
+const NATURAL6 = {
+  world:
+    "The look of the place stays Jamaica: turquoise water, pale cream sand, deep green trees, natural teak, white and cream linen, a little black. Yellow is only punctuation: four to six plain saffron canvas umbrellas with wooden poles (no fringe, no stripes), the champagne goblets, two to four acrylic ice buckets, the odd towel or cushion. Most cushions are cream, most tables have no bucket, and only about a quarter to a third of the guests are holding a yellow goblet — others hold clear glasses, water, or nothing.",
+  bar:
+    "The champagne bar is a refined, custom-built piece about four metres long in natural teak or iroko vertical slats with a thick white stone top and only a thin saffron-yellow inset line — the bar itself is mostly timber and white, not a yellow object. Integrated ice wells, glassware, dark green bottles with plain gold foil and blank cream labels, trays going out, three bartenders in white linen at work.",
+  dj:
+    "The DJ set-up is part of the event's architecture: a low natural-timber booth tucked into the shade at the tree line, its speakers built into timber boxes or partly screened by plants (no rental tripod stands), the DJ in an open linen shirt clearly visible mid-mix, and 20 to 30 people loosely dancing and moving near it.",
+  used:
+    "Everything looks used and lived-in but not messy: loungers and daybeds angled differently, a chair pulled out and turned toward a conversation, towels dropped casually, a handbag and sunglasses on a cushion, half-finished drinks with condensation on side tables, compressed cushions, footprints all over the sand around the lounge areas.",
+  people:
+    "The guests are a Jamaican social network, not strangers: half of them clearly know each other. Two people greet with a hug, someone waves across the beach, three friends laugh at the bar, an older friend stops to talk to a younger group, a couple arrives along the path from the villa, one group leans over to talk to the group next to them, a server greets a regular. Mostly 25 to 40 with real age texture — some late-30s and early-40s professionals, a few stylish guests in their late 40s and 50s, some younger 25 to 30 — varied body types, attractive but not all model-perfect, with the natural mix of upper-middle-class Jamaica plus diaspora and a few international friends. Premium swimwear, crochet, open linen shirts, linen trousers, knit polos, swim shorts, sunglasses, gold jewellery. Not a college party, not a wedding.",
+  photo:
+    "This should look like a photo someone posted on Sunday morning after the best event in Jamaica the day before: candid, uneven spacing, one walking guest slightly motion-blurred, some faces partly hidden, hair moving in the breeze, hard Caribbean sunlight with real shadow contrast, fine film grain. No symmetry, no perfectly aligned objects, no CGI cleanliness. Not hotel advertising, not a wedding, not a furniture catalogue, not a champagne commercial.",
+  never:
+    "No logos, crests, emblems, printed labels, words, letters or numbers on any object, bottle, bucket, glass, mat, speaker or clothing. No tents, pergolas, stages, truss, screens or barriers. Do not add more people than the scene needs and do not fill every patch of sand.",
+};
+
+const VIEW6 = {
+  a: "The hero: the feeling of discovering the event through the trees. Keep the foreground leaves, vines, trunk and rocks exactly as they are, and keep plenty of clear turquoise water and open sand. The event flows along the whole beach as four to six overlapping social groups rather than one central crowd: the champagne bar set deeper under the shade of the big trees on the left with a social crowd around it; the DJ booth integrated into the tree line further along with people dancing; two or three cabanas (light timber frames with cream linen) deeper down the beach with groups inside and a server bringing champagne; friends standing and talking in the tree shade; people moving between zones along the sand; a lively shoreline with friends standing in the shallows and more swimmers than before.",
+  b: "This is the PRIVATE HOSPITALITY GARDEN, not the main party — privacy, comfort, VIP hospitality, money without noise. Keep the cottage, stone path, every almond tree, the flagpole and the thatched umbrella exactly as they are. On the lawn: two or three cabanas and refined low lounge groupings with 25 to 45 guests in quiet conversation, seated and reclining, champagne being poured for them by a server from a small, refined teak service console (no large bar here); a couple walking along the path from the cottage; a few people strolling toward the beach, where the party continues softly in the background. No DJ in this view.",
+  c: "The photographer is walking through the event and caught a moment. Keep the villa, its stone base, the thatched umbrella, the overhanging leaves at the top of the frame and the distant headland exactly as they are, and remove the white plastic sun loungers. At the very left and right edges of the frame, two guests in swimwear partly cropped by the frame and softly out of focus are clinking goblets — small in the frame, not dominating. The midground is the hero: the champagne bar beside the thatched umbrella with people at it, guests moving between lounge groups, the DJ further down the beach with people dancing, friends at the shoreline and in the water. Shallow depth of field focused on the midground.",
+};
+
+const PASS03E = Object.keys(VIEW6).map((v) => ({
+  id: `p3e-reveal-${v}`,
+  slot: "reveal.beach",
+  model: "google/nano-banana-pro",
+  variants: 3,
+  input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+  refs: [{ key: "image_input", list: true, file: REVEAL_VIEWS[v].plate, max: 1200 }],
+  prompt: `${GEO5} It is about 4 PM at BEACH CLUB, a premium private beach event in Jamaica that has been running successfully for years; the party has been going for two hours. ${VIEW6[v]} ${NATURAL6.world} ${v === "a" ? NATURAL6.bar + " " + NATURAL6.dj : v === "c" ? NATURAL6.bar + " " + NATURAL6.dj : ""} ${NATURAL6.used} ${NATURAL6.people} ${NATURAL6.photo} ${NATURAL6.never}`,
+}));
+
 export const jobs = [
   /* ------------------------------------------------------------ P0 wides */
   {
@@ -428,5 +465,28 @@ export const jobs = [
     refs: [{ key: "image_input", list: true, file: `media-src/generated/p3d-reveal-${t[0]}/p3d-reveal-${t}.jpg`, max: 3000 }],
     prompt:
       "Edit this photo minimally. Remove every logo, crest, emblem, printed word, letter and number from all objects: the yellow ice buckets become plain glossy saffron-yellow acrylic with no marks; the yellow goblets become plain with no marks; every champagne bottle gets a plain blank cream label and plain gold foil (no yellow labels, no crests); bar mats become plain black rubber; speakers and decks become plain black with no branding. Change nothing else at all: keep every person, face, pose, piece of furniture, tree, building, the sand, the water, the sky, the light and the camera framing exactly identical.",
+  })),
+
+  ...PASS03E,
+  {
+    ...PASS03E[2],
+    id: "p3e-reveal-c-lock",
+    variants: 2,
+    prompt:
+      "FRAMING LOCK: the output must keep exactly the same wide field of view, camera position and composition as the input photo — same horizon height, the villa occupying the same left portion of the frame at the same size, the thatched umbrella in the same place, and the overhanging sea-grape leaves still filling the top edge of the frame. Do not zoom in or crop. " + PASS03E[2].prompt,
+  },
+  ...[
+    ["a", "p3e-reveal-a/p3e-reveal-a-3.jpg"],
+    ["b", "p3e-reveal-b/p3e-reveal-b-2.jpg"],
+    ["c", "p3e-reveal-c-lock/p3e-reveal-c-lock-2.jpg"],
+  ].map(([v, file]) => ({
+    id: `p3e-reveal-${v}-clean`,
+    slot: "reveal.beach",
+    model: "google/nano-banana-pro",
+    variants: 1,
+    input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+    refs: [{ key: "image_input", list: true, file: `media-src/generated/${file}`, max: 3000 }],
+    prompt:
+      "Edit this photo minimally. Every champagne bottle gets a plain blank cream label and plain gold foil — no yellow or orange labels, no crests, no writing. Remove any logo, crest, word, letter or number from buckets, glasses, mats, speakers and clothing. Change nothing else at all: keep every person, face, pose, object, tree, building, the sand, water, sky, light and framing exactly identical.",
   })),
 ];

@@ -191,3 +191,23 @@ See §5 (filled per slot as work proceeds). **`reveal.beach` first; stop for rev
 - B-2's sky is hazier than the plate's; grade it back toward the plate.
 
 The previous low-density picks are kept in `media-src/review/reveal-beach/v1-low-density/`.
+
+### Revision 4 — naturalism (supersedes revision 3)
+
+**Feedback:** the renders looked like a checklist. The target is a lived-in event that has run for years, with yellow reduced by about 40%.
+
+**Method:** edited the **original plates** again, not the revision 3 outputs, to avoid compounding artefacts. The prompt is `GEO5 + VIEW6[v] + NATURAL6` and describes behaviour and use rather than objects: world palette, refined teak bar, integrated DJ, used furniture, a social network, age texture, imperfection, and no logos.
+
+| View | Pick | Notes |
+|---|---|---|
+| A — hero | `p3e-reveal-a-3` → `-clean` | Teak bar with a white stone top and a thin saffron line, deeper under the left shade; DJ console with planters at the tree line; cabanas deeper with service; groups strung along the beach and in the shallows; clear water preserved. |
+| B — garden | `p3e-reveal-b-2` → `-clean` | Matches the plate framing; quiet lounge groupings, a small teak service console, a couple on the path, about 30 guests. Takes 1 and 3 moved the camera. |
+| C — inside | `p3e-reveal-c-lock-2` → `-clean` | All three standard takes zoomed in and lost the overhanging leaves. The `-lock` retake with an explicit framing lock restored the plate's field of view. The toast is small at the frame edges; used loungers (towels, bag, sunglasses, phone). |
+
+**De-brand:** yellow champagne labels reappeared, so the minimal-edit pass gave them plain cream labels and gold foil.
+
+**Known issues:**
+1. Skies are still paler than the plates; grade at promotion.
+2. **B casting skews white and international** (the A and C crowds are Jamaican-majority). Regenerate B or accept it as the diaspora/international lounge; this is a call for review.
+3. One rear-view bikini figure in B and C.
+4. Rights on derived images.
