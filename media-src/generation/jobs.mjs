@@ -323,6 +323,52 @@ const PASS03E = Object.keys(VIEW6).map((v) => ({
   prompt: `${GEO5} It is about 4 PM at BEACH CLUB, a premium private beach event in Jamaica that has been running successfully for years; the party has been going for two hours. ${VIEW6[v]} ${NATURAL6.world} ${v === "a" ? NATURAL6.bar + " " + NATURAL6.dj : v === "c" ? NATURAL6.bar + " " + NATURAL6.dj : ""} ${NATURAL6.used} ${NATURAL6.people} ${NATURAL6.photo} ${NATURAL6.never}`,
 }));
 
+/* ===================================================================
+ * Media Pass 03e — remaining regenerate slots, rev-4 method.
+ * ================================================================= */
+const PRO = { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" };
+const venue = (id, slot, plate, time, scene, opts = {}) => ({
+  id,
+  slot,
+  model: "google/nano-banana-pro",
+  variants: 2,
+  input: { ...PRO, ...(opts.aspect ? { aspect_ratio: opts.aspect } : {}) },
+  refs: [{ key: "image_input", list: true, file: plate, max: 1200 }],
+  prompt: `${opts.reframe ? "This is a real photograph of a private beach on Jamaica's North Coast; keep its sand, water, trees, light and character exactly, but you may move the camera closer as described." : GEO5} It is ${time} at BEACH CLUB, a premium private beach event in Jamaica that has been running successfully for years. ${scene} ${NATURAL6.world} ${NATURAL6.used} ${NATURAL6.people} ${NATURAL6.photo} ${NATURAL6.never}`,
+});
+const J9 = "media-src/venue-reference/jamaicaescapes/frankfort_on_the_beach_prospect_plantation_ocho_rios_jamaica";
+const CAB = "small temporary cabanas: light natural-timber frames with cream linen canopies and drapes, low daybeds with cream cushions";
+
+const PASS03F = [
+  venue("p3f-zone-shore", "zone.shore", `${J9}_10.jpg`, "about 3:45 PM",
+    `Remove the kayaks, paddleboards and toys. On the open sand: two loose clusters of plain saffron umbrellas with low teak loungers and daybeds angled casually toward the water, towels and bags on them, friends lounging and talking, a waiter in white crossing with a tray, people walking along the waterline and wading in; plenty of empty sand between clusters.`),
+  venue("p3f-zone-water", "zone.water", `${J9}_13.jpg`, "about 3:30 PM",
+    `Keep the hammock and the overhanging branches. In the clear turquoise water: groups of friends standing waist-deep laughing and talking, a couple swimming, people wading in and out, two white floating loungers with guests on them, one guest holding a goblet above the water; the beach empty-ish in the foreground with a towel and sandals dropped on the sand.`),
+  venue("p3f-zone-cabanas", "zone.cabanas", `${J9}_11.jpg`, "about 4:15 PM",
+    `Replace the two existing daybeds with three ${CAB}, set in the tree shade along the stone wall, each occupied by a small friend group lounging and talking, a host in white linen serving champagne from a saffron acrylic ice bucket, guests walking between the cabanas and the water; keep the thatched umbrella and the open sand toward the sea.`),
+  venue("p3f-cabanas-hero", "cabanas.hero", `${J9}_09.jpg`, "about 4:30 PM",
+    `Keep the pool terrace, gazebo, railings and lawn exactly. On the lawn in the shade of the trees toward the sea: four ${CAB} spaced apart with friend groups inside, a host in white carrying an ice bucket, a few guests walking across the lawn between the cabanas and the beach; calm, private, hosted — not crowded.`),
+  venue("p3f-zone-dj-terrace", "zone.dj-terrace", `${J9}_08.jpg`, "about 4:30 PM",
+    `Keep the infinity pool, gazebo, stone terrace, steps and railings exactly; remove the in-pool loungers. In the white gazebo a low natural-timber DJ booth with plain unbranded decks, the DJ in an open linen shirt mid-mix, speakers built into timber boxes; on the pool terrace in front, 25 to 35 guests loosely dancing with drinks, a few sitting on the pool edge with feet in the water, people swimming in the pool; poolside loungers angled casually with towels.`),
+  venue("p3f-act-shoreline-lounge", "activation.shoreline-lounge", `${J9}_17.jpg`, "about 4 PM",
+    `Replace the white plastic loungers and tables with one premium shoreline lounge: three plain saffron umbrellas over low teak daybeds and a low sofa with cream cushions, a teak side table with a saffron acrylic ice bucket and bottles, towels and a beach bag, a friend group of six to eight lounging, one coming out of the water, a waiter bringing a tray.`),
+  venue("p3f-act-cabana", "activation.cabana", `${J9}_11.jpg`, "about 4:45 PM",
+    `Move the camera close, to the edge of one ${CAB.replace("cabanas", "cabana").replace("small temporary ", "")} in the tree shade by the stone wall, looking out past the drapes to the sea: a host in white linen setting a saffron acrylic ice bucket with two dark green bottles (plain gold foil, blank cream labels) on a low teak table, four friends on the daybed mid-conversation, half-finished goblets, a bag and sunglasses on a cushion.`,
+    { reframe: true, aspect: "4:3" }),
+  venue("p3f-people-05", "people.05", `${J9}_10.jpg`, "about 5:20 PM",
+    `Move the camera into the crowd on the sand facing the sea and the headland. Remove the kayaks. A loose, happy crowd of 40 to 60 dancing to house music, friends with arms around each other, a few goblets raised, people laughing, low warm late-afternoon sun from the left with rim light; the DJ just out of frame. The lower-right of the frame is calmer.`,
+    { reframe: true, aspect: "16:9" }),
+  {
+    id: "p3f-pour-toast",
+    slot: "pour.toast",
+    model: "google/nano-banana-pro",
+    variants: 2,
+    input: { ...PRO, aspect_ratio: "3:4" },
+    refs: [{ key: "image_input", list: true, file: "media-src/generated/pour-pour-b/pour-pour-b-2.jpg", max: 1200 }],
+    prompt: "Editorial macro photograph at a private Jamaican beach party at 2:15 PM: two hands of different skin tones with thin gold jewellery raise two champagne goblets that just touch. The goblets are exactly the same as the one in the reference image: opaque glossy deep-saffron acrylic, bulbous round bowl, short stem, round foot, half full of pale gold champagne. White sand and turquoise sea softly out of focus behind, hard high sun from the left, 100mm, shallow depth of field, fine film grain. No text, no logos, no flutes, no clear glass.",
+  },
+];
+
 export const jobs = [
   /* ------------------------------------------------------------ P0 wides */
   {
@@ -488,5 +534,17 @@ export const jobs = [
     refs: [{ key: "image_input", list: true, file: `media-src/generated/${file}`, max: 3000 }],
     prompt:
       "Edit this photo minimally. Every champagne bottle gets a plain blank cream label and plain gold foil — no yellow or orange labels, no crests, no writing. Remove any logo, crest, word, letter or number from buckets, glasses, mats, speakers and clothing. Change nothing else at all: keep every person, face, pose, object, tree, building, the sand, water, sky, light and framing exactly identical.",
+  })),
+
+  ...PASS03F,
+  ...["p3f-act-cabana/p3f-act-cabana-1", "p3f-zone-cabanas/p3f-zone-cabanas-2", "p3f-act-shoreline-lounge/p3f-act-shoreline-lounge-2", "p3f-zone-dj-terrace/p3f-zone-dj-terrace-2", "p3f-zone-shore/p3f-zone-shore-1"].map((f) => ({
+    id: `${f.split("/")[1]}-clean`,
+    slot: "clean",
+    model: "google/nano-banana-pro",
+    variants: 1,
+    input: { aspect_ratio: "match_input_image", resolution: "4K", output_format: "jpg", safety_filter_level: "block_only_high" },
+    refs: [{ key: "image_input", list: true, file: `media-src/generated/${f}.jpg`, max: 3000 }],
+    prompt:
+      "Edit this photo minimally. Every champagne bottle gets a plain blank cream label and plain gold foil — no yellow or orange labels, no crests, no writing. Remove any logo, crest, word, letter or number from buckets, glasses, towels, speakers and clothing. Change nothing else at all: keep every person, face, pose, object, tree, building, the sand, water, sky, light and framing exactly identical.",
   })),
 ];

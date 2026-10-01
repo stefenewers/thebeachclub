@@ -66,10 +66,10 @@
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/pour-toast.webp",
-    "width": 1514,
+    "width": 1493,
     "height": 2000,
     "focus": "50% 45%",
-    "origin": "generated pour-toast-b/pour-toast-b-2.jpg"
+    "origin": "generated p3f-pour-toast/p3f-pour-toast-2.jpg"
   },
   "pour.wristband": {
     "provider": "local",
@@ -102,37 +102,37 @@
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/zone-water.webp",
-    "width": 1747,
-    "height": 1165,
-    "focus": "40% 55%",
-    "origin": "generated v3-zone-water/v3-zone-water-1.jpg"
+    "width": 2000,
+    "height": 1341,
+    "focus": "50% 55%",
+    "origin": "generated p3f-zone-water/p3f-zone-water-2.jpg"
   },
   "zone.shore": {
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/zone-shore.webp",
     "width": 2000,
-    "height": 1333,
-    "focus": "55% 55%",
-    "origin": "generated v3-zone-shore/v3-zone-shore-2.jpg"
+    "height": 1341,
+    "focus": "50% 60%",
+    "origin": "generated p3f-zone-shore-1-clean/p3f-zone-shore-1-clean-1.jpg"
   },
   "zone.cabanas": {
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/zone-cabanas.webp",
     "width": 2000,
-    "height": 1333,
-    "focus": "45% 55%",
-    "origin": "generated v3-zone-cabanas/v3-zone-cabanas-1.jpg"
+    "height": 1341,
+    "focus": "60% 60%",
+    "origin": "generated p3f-zone-cabanas-2-clean/p3f-zone-cabanas-2-clean-1.jpg"
   },
   "zone.dj-terrace": {
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/zone-dj-terrace.webp",
     "width": 2000,
-    "height": 1333,
-    "focus": "50% 50%",
-    "origin": "generated v3-zone-dj-terrace/v3-zone-dj-terrace-1.jpg"
+    "height": 1341,
+    "focus": "60% 45%",
+    "origin": "generated p3f-zone-dj-terrace-2-clean/p3f-zone-dj-terrace-2-clean-1.jpg"
   },
   "zone.garden-lounge": {
     "provider": "local",
@@ -183,10 +183,10 @@
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/people-05.webp",
-    "width": 2752,
-    "height": 1536,
-    "focus": "50% 60%",
-    "origin": "generated v3-people-05/v3-people-05-2.jpg"
+    "width": 3200,
+    "height": 1786,
+    "focus": "50% 55%",
+    "origin": "generated p3f-people-05/p3f-people-05-1.jpg"
   },
   "people.06": {
     "provider": "local",
@@ -220,9 +220,9 @@
     "kind": "image",
     "desktop": "/media/gen/activation-shoreline-lounge.webp",
     "width": 2000,
-    "height": 1493,
-    "focus": "55% 50%",
-    "origin": "generated im-act-shoreline-lounge/im-act-shoreline-lounge-1.jpg"
+    "height": 1341,
+    "focus": "50% 55%",
+    "origin": "generated p3f-act-shoreline-lounge-2-clean/p3f-act-shoreline-lounge-2-clean-1.jpg"
   },
   "activation.sunset-tequila": {
     "provider": "local",
@@ -247,9 +247,9 @@
     "kind": "image",
     "desktop": "/media/gen/activation-cabana.webp",
     "width": 2000,
-    "height": 1514,
-    "focus": "50% 55%",
-    "origin": "generated v3-act-cabana/v3-act-cabana-1.jpg"
+    "height": 1493,
+    "focus": "45% 55%",
+    "origin": "generated p3f-act-cabana-1-clean/p3f-act-cabana-1-clean-1.jpg"
   },
   "activation.beauty-refresh": {
     "provider": "local",
@@ -282,10 +282,10 @@
     "provider": "local",
     "kind": "image",
     "desktop": "/media/gen/cabanas-hero.webp",
-    "width": 2752,
-    "height": 1536,
-    "focus": "40% 55%",
-    "origin": "generated im-cabanas-hero/im-cabanas-hero-1.jpg"
+    "width": 3200,
+    "height": 2146,
+    "focus": "45% 60%",
+    "origin": "generated p3f-cabanas-hero/p3f-cabanas-hero-2.jpg"
   },
   "cabanas.detail": {
     "provider": "local",

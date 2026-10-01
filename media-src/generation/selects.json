@@ -28,7 +28,7 @@
     "focus": "45% 45%"
   },
   "pour.toast": {
-    "file": "pour-toast-b/pour-toast-b-2.jpg",
+    "file": "p3f-pour-toast/p3f-pour-toast-2.jpg",
     "focus": "50% 45%"
   },
   "pour.wristband": {
@@ -44,26 +44,20 @@
     "focus": "60% 40%"
   },
   "zone.water": {
-    "file": "v3-zone-water/v3-zone-water-1.jpg",
-    "focus": "40% 55%",
-    "crop": [
-      0,
-      0.08,
-      0.7,
-      0.7
-    ]
+    "file": "p3f-zone-water/p3f-zone-water-2.jpg",
+    "focus": "50% 55%"
   },
   "zone.shore": {
-    "file": "v3-zone-shore/v3-zone-shore-2.jpg",
-    "focus": "55% 55%"
+    "file": "p3f-zone-shore-1-clean/p3f-zone-shore-1-clean-1.jpg",
+    "focus": "50% 60%"
   },
   "zone.cabanas": {
-    "file": "v3-zone-cabanas/v3-zone-cabanas-1.jpg",
-    "focus": "45% 55%"
+    "file": "p3f-zone-cabanas-2-clean/p3f-zone-cabanas-2-clean-1.jpg",
+    "focus": "60% 60%"
   },
   "zone.dj-terrace": {
-    "file": "v3-zone-dj-terrace/v3-zone-dj-terrace-1.jpg",
-    "focus": "50% 50%"
+    "file": "p3f-zone-dj-terrace-2-clean/p3f-zone-dj-terrace-2-clean-1.jpg",
+    "focus": "60% 45%"
   },
   "zone.garden-lounge": {
     "file": "p3e-reveal-b-clean/p3e-reveal-b-clean-1.jpg",
@@ -86,8 +80,8 @@
     "focus": "50% 45%"
   },
   "people.05": {
-    "file": "v3-people-05/v3-people-05-2.jpg",
-    "focus": "50% 60%"
+    "file": "p3f-people-05/p3f-people-05-1.jpg",
+    "focus": "50% 55%"
   },
   "people.06": {
     "file": "v3-people-06/v3-people-06-2.jpg",
@@ -102,8 +96,8 @@
     "focus": "50% 50%"
   },
   "activation.shoreline-lounge": {
-    "file": "im-act-shoreline-lounge/im-act-shoreline-lounge-1.jpg",
-    "focus": "55% 50%"
+    "file": "p3f-act-shoreline-lounge-2-clean/p3f-act-shoreline-lounge-2-clean-1.jpg",
+    "focus": "50% 55%"
   },
   "activation.sunset-tequila": {
     "file": "im-act-sunset-tequila/im-act-sunset-tequila-1.jpg",
@@ -114,16 +108,8 @@
     "focus": "50% 50%"
   },
   "activation.cabana": {
-    "file": "v3-act-cabana/v3-act-cabana-1.jpg",
-    "focus": "50% 55%",
-    "patches": [
-      [
-        0.2,
-        0.8,
-        0.07,
-        0.05
-      ]
-    ]
+    "file": "p3f-act-cabana-1-clean/p3f-act-cabana-1-clean-1.jpg",
+    "focus": "45% 55%"
   },
   "activation.beauty-refresh": {
     "file": "bo-activation-beauty-refresh-imagen/bo-activation-beauty-refresh-imagen-1.jpg",
@@ -138,8 +124,8 @@
     "focus": "50% 55%"
   },
   "cabanas.hero": {
-    "file": "im-cabanas-hero/im-cabanas-hero-1.jpg",
-    "focus": "40% 55%"
+    "file": "p3f-cabanas-hero/p3f-cabanas-hero-2.jpg",
+    "focus": "45% 60%"
   },
   "cabanas.detail": {
     "file": "v3-cabanas-detail/v3-cabanas-detail-1.jpg",

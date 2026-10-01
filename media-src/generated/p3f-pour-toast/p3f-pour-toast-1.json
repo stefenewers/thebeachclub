@@ -1,0 +1,17 @@
+{
+  "job": "p3f-pour-toast",
+  "slot": "pour.toast",
+  "model": "google/nano-banana-pro",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Jamaican beach party at 2:15 PM: two hands of different skin tones with thin gold jewellery raise two champagne goblets that just touch. The goblets are exactly the same as the one in the reference image: opaque glossy deep-saffron acrylic, bulbous round bowl, short stem, round foot, half full of pale gold champagne. White sand and turquoise sea softly out of focus behind, hard high sun from the left, 100mm, shallow depth of field, fine film grain. No text, no logos, no flutes, no clear glass.",
+    "aspect_ratio": "3:4",
+    "resolution": "4K",
+    "output_format": "jpg",
+    "safety_filter_level": "block_only_high",
+    "image_input": [
+      {
+        "file": "media-src/generated/pour-pour-b/pour-pour-b-2.jpg"
+      }
+    ]
+  }
+}
