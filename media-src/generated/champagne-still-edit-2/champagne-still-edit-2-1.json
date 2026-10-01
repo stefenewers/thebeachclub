@@ -1,0 +1,15 @@
+{
+  "job": "champagne-still-edit-2",
+  "slot": "champagne.still",
+  "model": "black-forest-labs/flux-kontext-pro",
+  "input": {
+    "prompt": "Replace every clear glass champagne flute with an opaque glossy deep-saffron acrylic stemmed champagne goblet (warm marigold, orange-leaning yellow, same colour as the ice bucket) with a round bowl and short stem, half full of pale gold champagne. Remove any lemons or fruit. Keep the ice bucket, bottles, table, umbrella, sand, sea, light and shadows exactly the same. No text, no logos.",
+    "seed": 2322,
+    "aspect_ratio": "match_input_image",
+    "output_format": "png",
+    "safety_tolerance": 4,
+    "input_image": {
+      "file": "media-src/generated/champagne-still/champagne-still-2.jpg"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "reveal.beach": { "file": "reveal-beach-b/reveal-beach-b-2.jpg", "focus": "62% 60%" },
+  "champagne.still": { "file": "champagne-still-up/champagne-still-up-1.jpg", "focus": "60% 55%" },
+  "pour.bottle": { "file": "pour-bottle/pour-bottle-1.jpg", "focus": "50% 45%" },
+  "pour.ice": { "file": "pour-ice/pour-ice-1.jpg", "focus": "50% 50%" },
+  "pour.goblet": { "file": "pour-goblet-b/pour-goblet-b-2.jpg", "focus": "50% 50%" },
+  "pour.pour": { "file": "pour-pour-b/pour-pour-b-2.jpg", "focus": "45% 45%" },
+  "pour.toast": { "file": "pour-toast-b/pour-toast-b-2.jpg", "focus": "50% 45%" },
+  "pour.wristband": { "file": "pour-wristband-b/pour-wristband-b-2.jpg", "focus": "55% 55%" },
+  "pour.sand": { "file": "pour-sand/pour-sand-1.jpg", "focus": "45% 55%" },
+  "pour.sunlight": { "file": "pour-sunlight/pour-sunlight-1.jpg", "focus": "60% 40%" }
+}

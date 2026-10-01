@@ -1,0 +1,13 @@
+{
+  "job": "arrival-hero",
+  "slot": "arrival.hero",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "A private Jamaican estate drive at 1:40 PM: a narrow paved drive under a dense tropical canopy of almond trees, palms and orange-red flowering royal poinciana, leading to tall weathered teak double gates set in a pale limestone wall. A dark unbadged luxury SUV with no visible logo or lettering rolls slowly toward the open gates, seen from behind and slightly to the left, about 20 metres from the camera. At the gate a host in a white linen shirt holds a slim black leather folio, a valet in a white shirt and black trousers steps forward, a security guard in a black polo stands discreetly back. Hard high sun filtered through the canopy: deep shade on the drive with bright shafts and dappled pools of light, the gate area brighter. The car, gate and host sit in the upper-middle of the frame; the lower half of the frame is the shaded drive, dark and calm. Standing eye level, 35mm lens, deep focus, cinematic. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no logos, no badges, no number plate lettering, no night, no headlights on, no red carpet.",
+    "seed": 2201,
+    "aspect_ratio": "16:9",
+    "raw": true,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

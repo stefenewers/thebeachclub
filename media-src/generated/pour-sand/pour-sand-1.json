@@ -1,0 +1,13 @@
+{
+  "job": "pour-sand",
+  "slot": "pour.sand",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Caribbean beach party at 2:15 PM. Overhead view of bare feet on fine pale cream-white coral sand, a tan leather sandal kicked off beside them, the sharp curved shadow edge of a beach umbrella crossing the frame diagonally; one foot with a thin gold anklet. Hard high early-afternoon tropical sun from the left, crisp specular highlights, short sharp shadows. 100mm macro lens, shallow depth of field. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no labels, no flutes, no plastic cups, no steel bucket, no neon.",
+    "seed": 2406,
+    "aspect_ratio": "3:4",
+    "raw": true,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

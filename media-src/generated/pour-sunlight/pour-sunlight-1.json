@@ -1,0 +1,13 @@
+{
+  "job": "pour-sunlight",
+  "slot": "pour.sunlight",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Caribbean beach party at 2:15 PM. Looking up from below into a saffron-yellow canvas beach umbrella lit from above by hard sun so the canvas glows almost like a colour field, the teak pole and ribs in silhouette, a sliver of turquoise sky at one edge, warm light spilling onto a white linen cushion. Hard high early-afternoon tropical sun from the left, crisp specular highlights, short sharp shadows. 100mm macro lens, shallow depth of field. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no labels, no flutes, no plastic cups, no steel bucket, no neon.",
+    "seed": 2407,
+    "aspect_ratio": "3:4",
+    "raw": true,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

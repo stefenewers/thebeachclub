@@ -1,0 +1,13 @@
+{
+  "job": "pour-wristband-b",
+  "slot": "pour.wristband",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Caribbean beach party at 2:15 PM. Close-up of a woman's wrist with warm brown skin wearing a plain woven fabric wristband in deep saffron yellow with one thin cream edge stripe and a small matte brass slider clasp, layered with two thin gold bracelets. Her hand rests on a cream linen cushion; behind, out of focus, white sand and turquoise sea. The wristband and everything in frame is completely free of text, letters or patterns. Hard high early-afternoon tropical sun from the left, crisp specular highlights, short sharp shadows. 100mm macro lens, shallow depth of field. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no labels, no flutes, no clear glass, no plastic cups, no neon.",
+    "seed": 2530,
+    "aspect_ratio": "3:4",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

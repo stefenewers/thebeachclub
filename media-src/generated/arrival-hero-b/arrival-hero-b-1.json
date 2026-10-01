@@ -1,0 +1,23 @@
+{
+  "job": "arrival-hero-b",
+  "slot": "arrival.hero",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Guest arrival at a private Jamaican beach estate at 1:40 PM. Seen from behind, a dark luxury SUV with a completely plain, unbadged tailgate and no lettering rolls slowly up a short pale-stone driveway toward tall weathered teak double gates standing open in a rough dry-stacked white limestone wall overgrown with tropical plants. Dense canopy of palms, almond trees and orange-red flowering royal poinciana overhead, hard high sun breaking through in shafts and dappled light. Beside the gate a host in a white linen shirt and cream trousers holds a slim black leather folio; a valet in white steps forward. The car and gate sit in the upper-middle of the frame; the bottom of the frame is shaded driveway, dark and calm. Standing eye level, 35mm lens. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no logos, no badges, no number plate, no stucco, no suburban houses, no night, no headlights.",
+    "seed": 2211,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.2,
+    "image_prompt": {
+      "file": "media-src/boards/board-3.png",
+      "crop": [
+        1103,
+        0,
+        433,
+        330
+      ]
+    }
+  }
+}

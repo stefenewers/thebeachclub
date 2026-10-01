@@ -1,0 +1,13 @@
+{
+  "job": "pour-pour",
+  "slot": "pour.pour",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Caribbean beach party at 2:15 PM. Backlit macro of champagne being poured in a thin golden stream from the neck of a dark green bottle into a opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic goblet, rising bubbles and a little foam, a bartender's white linen cuff at the edge of frame, turquoise sea out of focus. Hard high early-afternoon tropical sun from the left, crisp specular highlights, short sharp shadows. 100mm macro lens, shallow depth of field. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no labels, no flutes, no plastic cups, no steel bucket, no neon.",
+    "seed": 2403,
+    "aspect_ratio": "3:4",
+    "raw": true,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

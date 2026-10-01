@@ -1,0 +1,13 @@
+{
+  "job": "pour-toast-b",
+  "slot": "pour.toast",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Editorial macro photograph at a private Caribbean beach party at 2:15 PM. Two hands of different skin tones with gold jewellery raise two champagne goblets that just touch. GOBLETS: opaque glossy deep-saffron acrylic (warm marigold orange-yellow, NOT transparent glass, NOT flutes), wide round bowls, short stems. Sea and white sand softly out of focus behind. Calm, no splashing. Hard high early-afternoon tropical sun from the left, crisp specular highlights, short sharp shadows. 100mm macro lens, shallow depth of field. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no labels, no flutes, no clear glass, no plastic cups, no neon.",
+    "seed": 2511,
+    "aspect_ratio": "3:4",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

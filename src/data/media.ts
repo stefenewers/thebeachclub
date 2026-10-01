@@ -1,5 +1,6 @@
 import type { MediaSlot, MediaSource } from "@/lib/types";
-import sources from "./mediaSources.json";
+import boardSources from "./mediaSources.json";
+import generatedSources from "./mediaSources.generated.json";
 
 /**
  * Central media manifest — also the production shot list.
@@ -351,8 +352,13 @@ export const media: MediaSlot[] = [
  * interim concept crops). A slot with a source renders the asset; without one
  * it keeps its generated plate.
  */
+const sources: Record<string, MediaSource> = {
+  ...(boardSources as Record<string, MediaSource>),
+  // Reviewed generations (scripts/media/promote.mjs) override board crops.
+  ...(generatedSources as Record<string, MediaSource>),
+};
 for (const slot of media) {
-  const source = (sources as Record<string, MediaSource>)[slot.id];
+  const source = sources[slot.id];
   if (source) slot.source = source;
 }
 

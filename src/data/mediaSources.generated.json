@@ -1,0 +1,92 @@
+{
+  "reveal.beach": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/reveal-beach.webp",
+    "width": 2752,
+    "height": 1536,
+    "focus": "62% 60%",
+    "origin": "generated reveal-beach-b/reveal-beach-b-2.jpg"
+  },
+  "champagne.still": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/champagne-still.webp",
+    "width": 1710,
+    "height": 2000,
+    "focus": "60% 55%",
+    "origin": "generated champagne-still-up/champagne-still-up-1.jpg"
+  },
+  "pour.bottle": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-bottle.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 45%",
+    "origin": "generated pour-bottle/pour-bottle-1.jpg"
+  },
+  "pour.ice": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-ice.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 50%",
+    "origin": "generated pour-ice/pour-ice-1.jpg"
+  },
+  "pour.goblet": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-goblet.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 50%",
+    "origin": "generated pour-goblet-b/pour-goblet-b-2.jpg"
+  },
+  "pour.pour": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-pour.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "45% 45%",
+    "origin": "generated pour-pour-b/pour-pour-b-2.jpg"
+  },
+  "pour.toast": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-toast.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "50% 45%",
+    "origin": "generated pour-toast-b/pour-toast-b-2.jpg"
+  },
+  "pour.wristband": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-wristband.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "55% 55%",
+    "origin": "generated pour-wristband-b/pour-wristband-b-2.jpg"
+  },
+  "pour.sand": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-sand.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "45% 55%",
+    "origin": "generated pour-sand/pour-sand-1.jpg"
+  },
+  "pour.sunlight": {
+    "provider": "local",
+    "kind": "image",
+    "desktop": "/media/gen/pour-sunlight.webp",
+    "width": 1514,
+    "height": 2000,
+    "focus": "60% 40%",
+    "origin": "generated pour-sunlight/pour-sunlight-1.jpg"
+  }
+}

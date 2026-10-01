@@ -1,0 +1,13 @@
+{
+  "job": "champagne-still",
+  "slot": "champagne.still",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "Minimal luxury still life on the sand of a small, lush, private cove on Jamaica's North Coast near Ocho Rios: fine pale cream-white coral sand, glass-clear shallows going pale turquoise to deep teal beyond a reef, dark limestone rocks at the headlands, dense dark-green sea grape and Indian almond trees and a few naturally leaning coconut palms running down to the sand at 4:45 PM. a opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic champagne ice bucket filled with crushed ice, beaded with condensation, holding two dark green champagne bottles with plain gold foil and blank cream labels; beside it a single opaque glossy deep-saffron (warm marigold, orange-leaning yellow, not lemon, not transparent) acrylic stemmed champagne goblets with a round bowl and short stem half full of pale gold champagne with fine bubbles, on a low weathered teak side table. The plain straight edge of a saffron-yellow beach umbrella canvas enters the top corner and casts a soft shadow band. Behind, softly out of focus, a band of clear turquoise sea and a sliver of sky. Hard warm sun from the left, one long crisp shadow running to the right across the sand, bright specular highlights on the acrylic and ice, sun glowing through the goblet. Low camera about 40 cm above the sand, 85mm lens at f/4. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No people, no hands, no text, no logos, no labels, no flowers, no fruit, no flutes, no steel.",
+    "seed": 2302,
+    "aspect_ratio": "4:5",
+    "raw": true,
+    "output_format": "jpg",
+    "safety_tolerance": 4
+  }
+}

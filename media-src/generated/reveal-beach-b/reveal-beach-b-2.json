@@ -1,0 +1,23 @@
+{
+  "job": "reveal-beach-b",
+  "slot": "reveal.beach",
+  "model": "black-forest-labs/flux-1.1-pro-ultra",
+  "input": {
+    "prompt": "A private one-day beach club party in full swing on a small, lush, private cove on Jamaica's North Coast near Ocho Rios: fine pale cream-white coral sand, glass-clear shallows going pale turquoise to deep teal beyond a reef, dark limestone rocks at the headlands, dense dark-green sea grape and Indian almond trees and a few naturally leaning coconut palms running down to the sand, photographed at 2:45 PM in early June from slightly above the sand at the back of the beach, looking out to sea. The foreground and middle of the frame are the party: twelve round beach umbrellas with solid saffron-yellow matte canvas, short straight valance, no stripes, no fringe, natural teak poles in loose clusters, low teak loungers and daybeds with cream cushions and a few saffron-yellow cushions, three natural oiled-teak cabanas with white linen drapes tied back with rope, cream cushions with a few saffron-yellow accents along the tree line on the right, a 6-metre bar with a saffron-yellow slatted front and white top under a white canvas pergola at the back right with bartenders in white, and a small timber DJ booth tucked under the trees. About 200 guests: groups talking and laughing on the sand, waiters in white linen with trays, people waist-deep in the clear turquoise shallows. a contemporary affluent Caribbean crowd, naturally mixed: Black Jamaican, mixed-race, white and international guests, mostly late 20s to early 40s, men and women in roughly equal numbers, relaxed old friends and couples, stylish but not posed, no one looking at the camera. men in open-collar linen shirts, knit polos, resort shirts and tailored swim shorts; women in premium swimwear, crochet cover-ups, linen sets and resort dresses; colours white, cream, sand, black, olive and muted terracotta; gold jewellery and sunglasses; almost nobody wears yellow. Hard clear sun from the left, short crisp shadows, turquoise water, small cumulus on the horizon, out-of-focus sea grape branches framing the top left corner. documentary editorial photograph, shot on a full-frame camera with natural light only, warm-neutral colour grade, true skin tones on every complexion, protected highlights on the white sand, fine film grain, luxury hospitality campaign, restrained and real. No text, no letters, no logos, no signage, no brand labels, no stage, no LED screens, no lighting truss, no inflatables, no neon, no purple, no festival.",
+    "seed": 2112,
+    "aspect_ratio": "16:9",
+    "raw": false,
+    "output_format": "jpg",
+    "safety_tolerance": 4,
+    "image_prompt_strength": 0.22,
+    "image_prompt": {
+      "file": "media-src/boards/board-5.png",
+      "crop": [
+        56,
+        0,
+        898,
+        505
+      ]
+    }
+  }
+}

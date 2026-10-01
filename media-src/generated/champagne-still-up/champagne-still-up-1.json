@@ -1,0 +1,12 @@
+{
+  "job": "champagne-still-up",
+  "slot": "champagne.still",
+  "model": "nightmareai/real-esrgan",
+  "input": {
+    "scale": 2,
+    "face_enhance": false,
+    "image": {
+      "file": "media-src/generated/champagne-still-edit-2/champagne-still-edit-2-1.png"
+    }
+  }
+}
